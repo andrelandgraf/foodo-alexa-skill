@@ -1,4 +1,4 @@
-# foodoo-backend
+# foodoo-alexa-skill
 
 ## Set up the dev environment
 
