@@ -81,3 +81,9 @@ The back end is where the logic of your skill resides.
 #### Documentation
 * [Official Alexa Skills Kit Node.js SDK](https://www.npmjs.com/package/ask-sdk) - The Official Node.js SDK Documentation
 *  [Official Alexa Skills Kit Documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) - Official Alexa Skills Kit Documentation
+
+## Working with AWS
+
+### Introduction
+
+Check out one of the following guides [1](https://www.ideaminetech.com/blog/aws-services-in-simple-terms/), [2](https://www.expeditedssl.com/aws-in-plain-english) for a quick overview over the different AWS products. 
