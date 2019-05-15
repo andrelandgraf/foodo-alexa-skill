@@ -1,7 +1,7 @@
 {
   "deploy_settings": {
     "default": {
-      "skill_id": "",
+      "skill_id": "amzn1.ask.skill.fe7abc7e-9019-450a-a874-199e299d327d",
       "merge": {}
     }
   }
