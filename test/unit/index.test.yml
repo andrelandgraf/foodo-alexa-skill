@@ -8,8 +8,8 @@
 # Created by Bespoken
 # Learn more at https://read.bespoken.io/unit-testing/getting-started/
 #
-# Skill name: "Space Facts" by Amazon
-# Test scope: LaunchRequest, GetNewFactIntent, AMAZON.HelpIntent, AMAZON.StopIntent, AMAZON.CancelIntent,
+# Skill name: "Foodoo"
+# Test scope: LaunchRequest, HelloWorldIntent, AMAZON.HelpIntent, AMAZON.StopIntent, AMAZON.CancelIntent,
 #             AMAZON.FallbackIntent
 # Description: General test suite for all intents
 #=====================================================================================================================
@@ -21,24 +21,25 @@ configuration:
 ---
 - test: Launch request, no further interaction.
 - LaunchRequest: # LaunchRequest is not an utterance but a request type and reserved word
-  - response.outputSpeech.ssml: Here's your fact
+  - response.outputSpeech.ssml: "*"
   - response.card.type: Simple
-  - response.card.title: Space Facts
-  - response.card.content: "*" # Any text will match
+  - response.card.title: Foodoo
+  - response.card.content: "*" # Any text will match 
+  # /here's your fact.*/i # Regular expression; i flag means case insensitive
 
 ---
 - test: GetNewFactIntent direct call
-- GetNewFactIntent:
-  - response.outputSpeech.ssml: Here's your fact
+- HelloWorldIntent:
+  - response.outputSpeech.ssml: "*"
   - response.card.type: Simple
-  - response.card.title: Space Facts
+  - response.card.title: Foodoo
   - response.card.content: "*" # Quotes need to be used when the response starts with a star
 
 ---
 - test: AMAZON.HelpIntent. Ask for help and exit.
 - LaunchRequest # Empty expected part means we are not testing the response
 - AMAZON.HelpIntent:
-  - response.outputSpeech.ssml: You can say tell me a space fact, or, you can say exit... What can I help you with?
+  - response.outputSpeech.ssml: You can say hi, or, you can say exit... What can I help you with?
   - response.card: undefined
   - response.reprompt.outputSpeech.ssml: What can I help you with?
 - SessionEndedRequest: # This is equivalent to say 'exit'
@@ -54,7 +55,7 @@ configuration:
 - test: AMAZON.HelpIntent. Ask for help and then for a fact.
 - LaunchRequest
 - AMAZON.HelpIntent
-- GetNewFactIntent: /here's your fact.*/i # Regular expression; i flag means case insensitive
+- HelloWorldIntent: '*'
 
 ---
 - test: AMAZON.StopIntent
@@ -70,6 +71,6 @@ configuration:
 - test: AMAZON.FallbackIntent
 - LaunchRequest
 - AMAZON.FallbackIntent:
-  - prompt: The Space Facts skill can't help you with that # prompt is equivalent to response.outputSpeech.ssml
+  - prompt: The Foodoo skill can't help you with that # prompt is equivalent to response.outputSpeech.ssml
   - reprompt: What can I help you with? # reprompt is equivalent to response.reprompt.outputSpeech.ssml
   - response.shouldEndSession: false
