@@ -1,12 +1,13 @@
+const intents = require( './index' );
+
 /**
  * Built-in Intents
  */
-
 const HelpHandler = {
     canHandle(handlerInput) {
       const request = handlerInput.requestEnvelope.request;
-      return request.type === 'IntentRequest'
-        && request.intent.name === 'AMAZON.HelpIntent';
+      return request.type === intents.INTENT_REQUEST
+        && request.intent.name === intents.HELP_INTENT;
     },
     handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -23,8 +24,8 @@ const HelpHandler = {
 const FallbackHandler = {
     canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
-        return request.type === 'IntentRequest'
-        && request.intent.name === 'AMAZON.FallbackIntent';
+        return request.type === intents.INTENT_REQUEST
+        && request.intent.name === intents.FALLBACK_INTENT;
     },
     handle(handlerInput) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -38,9 +39,9 @@ const FallbackHandler = {
 const ExitHandler = {
     canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
-        return request.type === 'IntentRequest'
-        && (request.intent.name === 'AMAZON.CancelIntent'
-            || request.intent.name === 'AMAZON.StopIntent');
+        return request.type === intents.INTENT_REQUEST
+        && (request.intent.name === intents.CANCEL_INTENT
+            || request.intent.name === intents.STOP_INTENT );
     },
     handle(handlerInput) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
@@ -53,7 +54,7 @@ const ExitHandler = {
 const SessionEndedRequestHandler = {
     canHandle(handlerInput) {
         const request = handlerInput.requestEnvelope.request;
-        return request.type === 'SessionEndedRequest';
+        return request.type === intents.SESSION_ENDED_REQUEST;
     },
     handle(handlerInput) {
         console.log(`Session ended with reason: ${handlerInput.requestEnvelope.request.reason}`);

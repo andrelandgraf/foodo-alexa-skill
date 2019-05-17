@@ -1,10 +1,12 @@
+const intents = require( './index' );
+
 const HelloWorldHandler = {
     canHandle(handlerInput) {
       const request = handlerInput.requestEnvelope.request;
       // checks request type
-      return request.type === 'LaunchRequest'
-        || (request.type === 'IntentRequest'
-          && request.intent.name === 'HelloWorldIntent');
+      return request.type === intents.LAUNCH_REQUEST
+        || (request.type === intents.INTENT_REQUEST
+          && request.intent.name === intents.HELLO_WORLD_INTENT );
     },
     handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
