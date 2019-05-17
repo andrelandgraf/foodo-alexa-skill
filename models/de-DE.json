@@ -5,15 +5,43 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "abbruch",
+            "aufhören",
+            "anhalten",
+            "foodoo abbruch",
+            "foodoo aufhören",
+            "foodoo anhalten",
+            "app abbruch",
+            "app aufhören",
+            "app anhalten"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "hilfe",
+            "helfe mir",
+            "ich brauche hilfe",
+            "foodoo hilfe",
+            "foodoo helfe mir",
+            "foodoo, ich bauche hilfe"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [
+            "stop",
+            "verlassen",
+            "foodoo stop",
+            "stop foodoo",
+            "foodoo verlassen",
+            "stoppe foodoo",
+            "ich will foodoo stoppen",
+            "ich will foodoo verlassen",
+            "app verlassen",
+            "app stoppen"
+          ]
         },
         {
           "name": "AMAZON.FallbackIntent",
