@@ -10,6 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "ask-sdk": "^2.5.2",
-    "dotenv": "^8.0.0"
+    "dotenv": "^8.0.0",
+    "i18next": "^15.1.1",
+    "i18next-sprintf-postprocessor": "^0.2.2"
   }
 }
