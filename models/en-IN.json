@@ -5,15 +5,51 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": []
+          "samples": [
+            "cancel",
+            "break",
+            "cancel foodoo",
+            "foodoo cancel",
+            "break foodoo",
+            "foodoo break",
+            "cancel app",
+            "break app"
+          ]
         },
         {
           "name": "AMAZON.HelpIntent",
-          "samples": []
+          "samples": [
+            "help",
+            "support",
+            "assistance",
+            "guidance",
+            "I need help",
+            "I need support",
+            "I need assistance",
+            "I need guidance",
+            "help wanted",
+            "support wanted",
+            "assistance wanted",
+            "guidance wanted",
+            "foodoo, I need help",
+            "foodoo, I need support",
+            "foodoo, I need assistance",
+            "foodoo, I need guidance",
+            "foodoo, help",
+            "foodoo, support",
+            "foodoo, assistance",
+            "foodoo, guidance"
+          ]
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": []
+          "samples": [            "quit",
+            "stop",
+            "quit foodoo",
+            "stop foodoo",
+            "quit app",
+            "stop app"
+          ]
         },
         {
           "name": "AMAZON.FallbackIntent",
