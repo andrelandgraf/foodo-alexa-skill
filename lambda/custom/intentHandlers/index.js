@@ -3,6 +3,7 @@ const INTENT_REQUEST = 'IntentRequest';
 const CANCEL_INTENT = 'AMAZON.CancelIntent';
 const STOP_INTENT = 'AMAZON.StopIntent';
 const HELP_INTENT = 'AMAZON.HelpIntent';
+const FALLBACK_INTENT = 'AMAZON.FallbackIntent';
 const HELLO_WORLD_INTENT = 'HelloWorldIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';
 
@@ -12,6 +13,7 @@ module.exports = {
     CANCEL_INTENT,
     STOP_INTENT,
     HELP_INTENT,
+    FALLBACK_INTENT,
     HELLO_WORLD_INTENT,
     SESSION_ENDED_REQUEST,
 };
