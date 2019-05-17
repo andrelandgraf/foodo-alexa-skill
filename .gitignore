@@ -1,4 +1,7 @@
 .DS_Store
 /lambda/custom/node_modules
 /lambda/custom/package-lock.json
+node_modules
+package-lock.json
 .env
+test_output
