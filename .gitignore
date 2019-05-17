@@ -1,4 +1,5 @@
 .DS_Store
+.idea
 /lambda/custom/node_modules
 /lambda/custom/package-lock.json
 node_modules

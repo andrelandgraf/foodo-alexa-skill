@@ -7,7 +7,7 @@ const builtInHandlers = require( './intentHandlers/builtInHandler' );
 const errorHandlers = require( './intentHandlers/errorHandler' );
 const helloWorldHandlers = require( './intentHandlers/helloWorld' );
 
-const internationalization = require( './internationalization/internatioalization' );
+const internationalization = require( './internationalization/internationalization' );
 
 const skillBuilder = Alexa.SkillBuilders.custom();
 
