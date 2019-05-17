@@ -9,22 +9,22 @@
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "3679863ae85050a84113de92e8ecd7f4"
+            "eTag": "8bcd6c1f616c370870efa88fe24095b9"
           },
           "en-AU": {
-            "eTag": "82990ab58c42c6209d330ca79133075d"
+            "eTag": "6b9f7d9dea8cac3354e2a95cd4b4bfb5"
           },
           "en-GB": {
-            "eTag": "82990ab58c42c6209d330ca79133075d"
+            "eTag": "6b9f7d9dea8cac3354e2a95cd4b4bfb5"
           },
           "en-US": {
-            "eTag": "82990ab58c42c6209d330ca79133075d"
+            "eTag": "6b9f7d9dea8cac3354e2a95cd4b4bfb5"
           },
           "en-CA": {
-            "eTag": "82990ab58c42c6209d330ca79133075d"
+            "eTag": "6b9f7d9dea8cac3354e2a95cd4b4bfb5"
           },
           "en-IN": {
-            "eTag": "82990ab58c42c6209d330ca79133075d"
+            "eTag": "6b9f7d9dea8cac3354e2a95cd4b4bfb5"
           }
         },
         "lambda": [
@@ -37,7 +37,7 @@
             "codeUri": "lambda/custom",
             "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
             "handler": "index.handler",
-            "revisionId": "d044750b-6493-4127-b545-9a1a8e1ea848",
+            "revisionId": "5a1e887b-be1d-4174-86d8-bf0931b9a561",
             "runtime": "nodejs8.10"
           }
         ]
