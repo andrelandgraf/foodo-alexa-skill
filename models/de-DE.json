@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "weltraumfakten",
+      "invocationName": "foodoo",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",

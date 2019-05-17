@@ -1,39 +1,99 @@
 {
-  "interactionModel": {
-      "languageModel": {
-          "invocationName": "foodoo",
-          "intents": [
-              {
-                  "name": "AMAZON.CancelIntent",
-                  "samples": []
+    "manifest": {
+        "publishingInformation": {
+        "locales": {
+            "de-DE": {
+                "summary": "Kurze Beschreibung",
+                "examplePhrases": [
+                  "Alexa öffne Foodoo"
+                ],
+                "name": "Foodoo",
+                "description": "Volle Beschreibung des Skills und aller Intents"
               },
-              {
-                  "name": "AMAZON.HelpIntent",
-                  "samples": []
+              "en-AU": {
+                "summary": "Learn about fun food items.",
+                "examplePhrases": [
+                  "Alexa open Foodoo",
+                  "Alexa ask Foodoo for a food item"
+                ],
+                "keywords": [
+                  "nutrition",
+                  "food items",
+                  "recipes"
+                ],
+                "name": "Foodoo",
+                "description": "Sample Full Description"
               },
-              {
-                  "name": "AMAZON.StopIntent",
-                  "samples": []
+              "en-CA": {
+                "summary": "Learn about fun food items.",
+                "examplePhrases": [
+                  "Alexa open Foodoo",
+                  "Alexa ask Foodoo for a food item"
+                ],
+                "keywords": [
+                  "nutrition",
+                  "food items",
+                  "recipes"
+                ],
+                "name": "Foodoo",
+                "description": "Sample Full Description"
               },
-              {
-                  "name": "HelloWorldIntent",
-                  "slots": [],
-                  "samples": [
-                      "hello",
-                      "how are you",
-                      "say hi world",
-                      "say hi",
-                      "hi",
-                      "say hello world",
-                      "say hello"
-                  ]
+              "en-GB": {
+                "summary": "Learn about fun food items.",
+                "examplePhrases": [
+                  "Alexa open Foodoo",
+                  "Alexa ask Foodoo for a food item"
+                ],
+                "keywords": [
+                  "nutrition",
+                  "food items",
+                  "recipes"
+                ],
+                "name": "Foodoo",
+                "description": "Sample Full Description"
               },
-              {
-                  "name": "AMAZON.NavigateHomeIntent",
-                  "samples": []
+              "en-IN": {
+                "summary": "Learn about fun food items.",
+                "examplePhrases": [
+                  "Alexa open Foodoo",
+                  "Alexa ask Foodoo for a food item"
+                ],
+                "keywords": [
+                  "nutrition",
+                  "food items",
+                  "recipes"
+                ],
+                "name": "Foodoo",
+                "description": "Sample Full Description"
+              },
+              "en-US": {
+                "summary": "Learn about fun food items.",
+                "examplePhrases": [
+                  "Alexa open Foodoo",
+                  "Alexa ask Foodoo for a dish"
+                ],
+                "keywords": [
+                  "nutrition",
+                  "food items",
+                  "recipes"
+                ],
+                "name": "Foodoo",
+                "description": "Sample Full Description"
               }
-          ],
-          "types": []
-      }
-  }
+        },
+        "isAvailableWorldwide": true,
+        "testingInstructions": "Sample Testing Instructions.",
+        "category": "EDUCATION_AND_REFERENCE",
+        "distributionCountries": []
+        },
+        "apis": {
+        "custom": {
+            "endpoint": {
+            "sourceDir": "lambda/custom",
+            "uri": "arn:aws:lambda:eu-west-1:512932559809:function:serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W"
+            }
+        }
+        },
+        "manifestVersion": "1.0"
+    }
 }

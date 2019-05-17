@@ -2,7 +2,46 @@
   "deploy_settings": {
     "default": {
       "skill_id": "amzn1.ask.skill.fe7abc7e-9019-450a-a874-199e299d327d",
-      "merge": {}
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "8daa548ec7e91d739b8e43cf8c4a24a4"
+        },
+        "interactionModel": {
+          "de-DE": {
+            "eTag": "3679863ae85050a84113de92e8ecd7f4"
+          },
+          "en-AU": {
+            "eTag": "82990ab58c42c6209d330ca79133075d"
+          },
+          "en-GB": {
+            "eTag": "82990ab58c42c6209d330ca79133075d"
+          },
+          "en-US": {
+            "eTag": "82990ab58c42c6209d330ca79133075d"
+          },
+          "en-CA": {
+            "eTag": "82990ab58c42c6209d330ca79133075d"
+          },
+          "en-IN": {
+            "eTag": "82990ab58c42c6209d330ca79133075d"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:eu-west-1:512932559809:function:serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
+            "awsRegion": "eu-west-1",
+            "codeUri": "lambda/custom",
+            "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
+            "handler": "index.handler",
+            "revisionId": "d044750b-6493-4127-b545-9a1a8e1ea848",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
     }
   }
- }
+}
