@@ -1,0 +1,14 @@
+{
+  "name": "foodoo-alexa-skill",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "bst test"
+  },
+  "author": "Andre Landgraf",
+  "license": "ISC",
+  "devDependencies": {
+    "bespoken-tools": "^2.3.14"
+  }
+}

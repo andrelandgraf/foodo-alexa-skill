@@ -28,7 +28,7 @@ configuration:
   # /here's your fact.*/i # Regular expression; i flag means case insensitive
 
 ---
-- test: GetNewFactIntent direct call
+- test: HelloWorldIntent direct call
 - HelloWorldIntent:
   - response.outputSpeech.ssml: "*"
   - response.card.type: Simple
