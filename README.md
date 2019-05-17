@@ -87,3 +87,14 @@ The back end is where the logic of your skill resides.
 ### Introduction
 
 Check out one of the following guides [1](https://www.ideaminetech.com/blog/aws-services-in-simple-terms/), [2](https://www.expeditedssl.com/aws-in-plain-english) for a quick overview over the different AWS products. 
+
+## Deploying
+
+Set up ask cli as described above. Write `ask deploy` into the command line on repository root folder level to automatically deploy the AWS lambda function and the Alexa skill.
+
+## Testing
+
+### Manual testing via ask command line interface
+
+Write `ask dialog --locale [de-De | en-US | en-GB | ... ]` to start the interaction with the Alexa Skill. Write `Alexa start Foodoo` to start the Foodoo Intent and interact with our Skill! 
+`!quit` lets you leave the interaction again. 
