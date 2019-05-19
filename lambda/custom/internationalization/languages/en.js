@@ -1,9 +1,9 @@
 const enData = {
     translation: {
-        SKILL_NAME: 'Foodoo',
+        SKILL_NAME: 'Home Cooking',
         HELP_MESSAGE: 'You can say hi, or, you can say exit... What can I help you with?',
         HELP_REPROMPT: 'What can I help you with?',
-        FALLBACK_MESSAGE: 'The Foodoo skill can\'t help you with that.  It can help you discover facts about space if you say tell me a space fact. What can I help you with?',
+        FALLBACK_MESSAGE: 'The Foodoo skill can\'t help you with that. This is the fallback message',
         FALLBACK_REPROMPT: 'What can I help you with?',
         ERROR_MESSAGE: 'Sorry, an error occurred.',
         STOP_MESSAGE: 'Goodbye!',
@@ -18,31 +18,31 @@ const enData = {
 
 const enauData = {
     translation: {
-        SKILL_NAME: 'Austrailian Foodoo',
+        SKILL_NAME: 'Home Cooking',
     },
 };
 
 const encaData = {
     translation: {
-        SKILL_NAME: 'Canadian Foodoo',
+        SKILL_NAME: 'Home Cooking',
     },
 };
 
 const engbData = {
     translation: {
-        SKILL_NAME: 'British Foodoo',
+        SKILL_NAME: 'Home Cooking',
     },
 };
 
 const eninData = {
     translation: {
-        SKILL_NAME: 'Indian Foodoo',
+        SKILL_NAME: 'Home Cooking',
     },
 };
 
 const enusData = {
     translation: {
-        SKILL_NAME: 'American Foodoo',
+        SKILL_NAME: 'Home Cooking',
     },
 };
 

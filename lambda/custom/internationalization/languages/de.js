@@ -1,10 +1,10 @@
 // translations
 const deData = {
     translation: {
-      SKILL_NAME: 'Foodoo',
+      SKILL_NAME: 'Koch Assistent',
       HELP_MESSAGE: 'Du kannst hallo sagen, oder du kannst „Beenden“ sagen... Wie kann ich dir helfen?',
       HELP_REPROMPT: 'Wie kann ich dir helfen?',
-      FALLBACK_MESSAGE: 'Die Weltraumfakten Skill kann dir dabei nicht helfen. Sie kann dir Fakten über den Raum erzählen, wenn du dannach fragst.',
+      FALLBACK_MESSAGE: 'Das ist eine Fallback Message',
       FALLBACK_REPROMPT: 'Wie kann ich dir helfen?',
       ERROR_MESSAGE: 'Es ist ein Fehler aufgetreten.',
       STOP_MESSAGE: 'Auf Wiedersehen!',
@@ -19,7 +19,7 @@ const deData = {
   
 const dedeData = {
     translation: {
-      SKILL_NAME: 'Foodoo auf Deutsch',
+      SKILL_NAME: 'Koch Assistent',
     },
 };
 
