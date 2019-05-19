@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "foodoo",
+      "invocationName": "koch hilfe",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -9,9 +9,9 @@
             "abbruch",
             "aufhören",
             "anhalten",
-            "foodoo abbruch",
-            "foodoo aufhören",
-            "foodoo anhalten",
+            "koch hilfe abbruch",
+            "koch hilfe aufhören",
+            "koch hilfe anhalten",
             "app abbruch",
             "app aufhören",
             "app anhalten"
@@ -23,9 +23,9 @@
             "hilfe",
             "helfe mir",
             "ich brauche hilfe",
-            "foodoo hilfe",
-            "foodoo helfe mir",
-            "foodoo ich bauche hilfe"
+            "koch hilfe hilfe",
+            "koch hilfe helfe mir",
+            "koch hilfe ich bauche hilfe"
           ]
         },
         {
@@ -33,12 +33,12 @@
           "samples": [
             "stop",
             "verlassen",
-            "foodoo stop",
-            "stop foodoo",
-            "foodoo verlassen",
-            "stoppe foodoo",
-            "ich will foodoo stoppen",
-            "ich will foodoo verlassen",
+            "koch hilfe stop",
+            "stop koch hilfe",
+            "koch hilfe verlassen",
+            "stoppe koch hilfe",
+            "ich will koch hilfe stoppen",
+            "ich will koch hilfe verlassen",
             "app verlassen",
             "app stoppen"
           ]
