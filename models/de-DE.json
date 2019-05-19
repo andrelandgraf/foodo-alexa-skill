@@ -9,9 +9,9 @@
             "abbruch",
             "aufhören",
             "anhalten",
-            "koch hilfe abbruch",
-            "koch hilfe aufhören",
-            "koch hilfe anhalten",
+            "koch assistent abbruch",
+            "koch assistent aufhören",
+            "koch assistent anhalten",
             "app abbruch",
             "app aufhören",
             "app anhalten"
@@ -23,9 +23,10 @@
             "hilfe",
             "helfe mir",
             "ich brauche hilfe",
-            "koch hilfe hilfe",
-            "koch hilfe helfe mir",
-            "koch hilfe ich bauche hilfe"
+            "koch assistent hilfe",
+            "koch assistent helfe mir",
+            "koch assistent ich bauche hilfe",
+            "alter geht nicht"
           ]
         },
         {
@@ -33,12 +34,12 @@
           "samples": [
             "stop",
             "verlassen",
-            "koch hilfe stop",
-            "stop koch hilfe",
-            "koch hilfe verlassen",
-            "stoppe koch hilfe",
-            "ich will koch hilfe stoppen",
-            "ich will koch hilfe verlassen",
+            "koch assistent stop",
+            "stop koch assistent",
+            "koch assistent verlassen",
+            "stoppe koch assistent",
+            "ich will koch assistent stoppen",
+            "ich will koch assistent verlassen",
             "app verlassen",
             "app stoppen"
           ]
