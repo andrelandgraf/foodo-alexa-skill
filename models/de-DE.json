@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "koch hilfe",
+      "invocationName": "koch assistent",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
