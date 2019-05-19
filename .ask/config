@@ -37,7 +37,7 @@
             "codeUri": "lambda/custom",
             "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
             "handler": "index.handler",
-            "revisionId": "5a1e887b-be1d-4174-86d8-bf0931b9a561",
+            "revisionId": "1b24febd-f425-4940-80d7-6ae0330a5c07",
             "runtime": "nodejs8.10"
           }
         ]
