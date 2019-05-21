@@ -13,9 +13,10 @@ This repository is set-up for unix systems only. Some scripts will not work on W
 
 ### IDE / Editor
 
-Get yourself VSCode for a quick start. On Linux just run: `snap install code`. Other IDEs e.g. Webstorm work just fine as well, just make sure that you have nice git and eslint support within your editor for more convenience. 
+Get yourself VSCode for a quick start. On Linux just run: `snap install code`. Other IDEs e.g. Webstorm work fine as well, just make sure that you have nice git and eslint support within your editor for more convenience.
 
 For VSCode, we can recommend following extensions:
+
 - eslint: A package that will show you all eslint linting errors within your code. Make sure to activate the checkbox "Auto fix on save" to ensure that all auto linting fixes will be fixed on every file save. 
 
 ### Set-up the repo locally
