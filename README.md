@@ -1,5 +1,9 @@
 # foodoo-alexa-skill
 
+## What is this repository for?
+
+This repository hosts the Alexa skill and lambda function of the Foodo Platform.
+
 ## Set up the dev environment
 
 This repository is set-up for unix systems only. Some scripts will not work on Windows, so it is storngly recommended that you work with this repository on a unix machine. 
