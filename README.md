@@ -4,6 +4,9 @@
 
 This repository hosts the Alexa skill and lambda function of the Foodo Platform.
 
+- Find the corresponding backend-api [here](https://github.com/tum-aweink/foodo-backend). 
+- Find the corresponding frontend-repo [here](https://github.com/andrelandgraf/foodo-frontend).
+
 ## Set up the dev environment
 
 This repository is set-up for unix systems only. Some scripts will not work on Windows, so it is storngly recommended that you work with this repository on a unix machine. 
