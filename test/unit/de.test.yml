@@ -8,7 +8,7 @@
 # Created by Bespoken
 # Learn more at https://read.bespoken.io/unit-testing/getting-started/
 #
-# Skill name: "Foodoo"
+# Skill name: "foodo"
 # Test scope: LaunchRequest, HelloWorldIntent, AMAZON.HelpIntent, AMAZON.StopIntent, AMAZON.CancelIntent,
 #             AMAZON.FallbackIntent
 # Description: General test suite for all intents
@@ -16,15 +16,15 @@
 
 ---
 configuration:
-  locale: en-US
+  locale: de-DE
 
 ---
 - test: Launch request, no further interaction.
 - LaunchRequest: # LaunchRequest is not an utterance but a request type and reserved word
   - response.outputSpeech.ssml: "*"
   - response.card.type: Simple
-  - response.card.title: Foodoo
-  - response.card.content: "*" # Any text will match 
+  - response.card.title: foodo
+  - response.card.content: "*" # Any text will match
   # /here's your fact.*/i # Regular expression; i flag means case insensitive
 
 ---
@@ -32,16 +32,16 @@ configuration:
 - HelloWorldIntent:
   - response.outputSpeech.ssml: "*"
   - response.card.type: Simple
-  - response.card.title: Foodoo
+  - response.card.title: foodo
   - response.card.content: "*" # Quotes need to be used when the response starts with a star
 
 ---
 - test: AMAZON.HelpIntent. Ask for help and exit.
 - LaunchRequest # Empty expected part means we are not testing the response
 - AMAZON.HelpIntent:
-  - response.outputSpeech.ssml: You can say hi, or, you can say exit... What can I help you with?
+  - response.outputSpeech.ssml: Du kannst hallo sagen, oder du kannst „Beenden“ sagen... Wie kann ich dir helfen?
   - response.card: undefined
-  - response.reprompt.outputSpeech.ssml: What can I help you with?
+  - response.reprompt.outputSpeech.ssml: Wie kann ich dir helfen?
 - SessionEndedRequest: # This is equivalent to say 'exit'
   - response.outputSpeech: undefined
 
@@ -49,28 +49,14 @@ configuration:
 - test: AMAZON.HelpIntent. Ask for help and stop.
 - LaunchRequest
 - AMAZON.HelpIntent # We have already tested this in previous sequence, no need to repeat it
-- AMAZON.StopIntent: Goodbye! # We can test only the expected outputSpeech like this
-
----
-- test: AMAZON.HelpIntent. Ask for help and then for a fact.
-- LaunchRequest
-- AMAZON.HelpIntent
-- HelloWorldIntent: '*'
+- AMAZON.StopIntent: Auf Wiedersehen! # We can test only the expected outputSpeech like this
 
 ---
 - test: AMAZON.StopIntent
 - LaunchRequest
-- AMAZON.StopIntent: Goodbye!
+- AMAZON.StopIntent: Auf Wiedersehen!
 
 ---
 - test: AMAZON.CancelIntent
 - LaunchRequest
-- AMAZON.CancelIntent: Goodbye!
-
----
-- test: AMAZON.FallbackIntent
-- LaunchRequest
-- AMAZON.FallbackIntent:
-  - prompt: The Foodoo skill can't help you with that # prompt is equivalent to response.outputSpeech.ssml
-  - reprompt: What can I help you with? # reprompt is equivalent to response.reprompt.outputSpeech.ssml
-  - response.shouldEndSession: false
+- AMAZON.CancelIntent: Auf Wiedersehen!

@@ -10,62 +10,6 @@
                 "name": "Foodoo",
                 "description": "Volle Beschreibung des Skills und aller Intents"
               },
-              "en-AU": {
-                "summary": "Learn about fun food items.",
-                "examplePhrases": [
-                  "Alexa open Foodoo",
-                  "Alexa ask Foodoo for a food item"
-                ],
-                "keywords": [
-                  "nutrition",
-                  "food items",
-                  "recipes"
-                ],
-                "name": "Foodoo",
-                "description": "Sample Full Description"
-              },
-              "en-CA": {
-                "summary": "Learn about fun food items.",
-                "examplePhrases": [
-                  "Alexa open Foodoo",
-                  "Alexa ask Foodoo for a food item"
-                ],
-                "keywords": [
-                  "nutrition",
-                  "food items",
-                  "recipes"
-                ],
-                "name": "Foodoo",
-                "description": "Sample Full Description"
-              },
-              "en-GB": {
-                "summary": "Learn about fun food items.",
-                "examplePhrases": [
-                  "Alexa open Foodoo",
-                  "Alexa ask Foodoo for a food item"
-                ],
-                "keywords": [
-                  "nutrition",
-                  "food items",
-                  "recipes"
-                ],
-                "name": "Foodoo",
-                "description": "Sample Full Description"
-              },
-              "en-IN": {
-                "summary": "Learn about fun food items.",
-                "examplePhrases": [
-                  "Alexa open Foodoo",
-                  "Alexa ask Foodoo for a food item"
-                ],
-                "keywords": [
-                  "nutrition",
-                  "food items",
-                  "recipes"
-                ],
-                "name": "Foodoo",
-                "description": "Sample Full Description"
-              },
               "en-US": {
                 "summary": "Learn about fun food items.",
                 "examplePhrases": [
