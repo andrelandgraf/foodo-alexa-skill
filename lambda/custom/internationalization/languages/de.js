@@ -1,7 +1,7 @@
 // translations
 const deData = {
     translation: {
-      SKILL_NAME: 'Koch Assistent',
+      SKILL_NAME: 'foodo',
       HELP_MESSAGE: 'Du kannst hallo sagen, oder du kannst „Beenden“ sagen... Wie kann ich dir helfen?',
       HELP_REPROMPT: 'Wie kann ich dir helfen?',
       FALLBACK_MESSAGE: 'Das ist eine Fallback Message',
@@ -16,14 +16,7 @@ const deData = {
         ],
     },
   };
-  
-const dedeData = {
-    translation: {
-      SKILL_NAME: 'Koch Assistent',
-    },
-};
 
 module.exports = {
     deData,
-    dedeData,
 }

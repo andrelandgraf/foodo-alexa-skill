@@ -1,17 +1,17 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "home cooking",
+      "invocationName": "foodo",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
           "samples": [
             "cancel",
             "break",
-            "cancel home cooking",
-            "home cooking cancel",
-            "break home cooking",
-            "home cooking break",
+            "cancel foodo",
+            "foodo cancel",
+            "break foodo",
+            "foodo break",
             "cancel app",
             "break app"
           ]
@@ -31,14 +31,14 @@
             "support wanted",
             "assistance wanted",
             "guidance wanted",
-            "home cooking I need help",
-            "home cooking I need support",
-            "home cooking I need assistance",
-            "home cooking I need guidance",
-            "home cooking help",
-            "home cooking support",
-            "home cooking assistance",
-            "home cooking guidance"
+            "foodo I need help",
+            "foodo I need support",
+            "foodo I need assistance",
+            "foodo I need guidance",
+            "foodo help",
+            "foodo support",
+            "foodo assistance",
+            "foodo guidance"
           ]
         },
         {
@@ -46,8 +46,8 @@
           "samples": [
             "quit",
             "stop",
-            "quit home cooking",
-            "stop home cooking",
+            "quit foodo",
+            "stop foodo",
             "quit app",
             "stop app"]
         },
