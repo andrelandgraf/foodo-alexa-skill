@@ -51,13 +51,13 @@
         {
           "name": "RecipeIntent",
           "samples": [
-            "koche mit mir",
-            "lass uns kochen",
-            "starte kochen",
-            "lass uns ein Rezept auswählen",
-            "lass uns zusammen kochen",
+            "zeig mir deine Rezepte",
+            "welche Rezepte kennst du",
+            "sag mir deine Rezepte",
+            "Rezepte",
+            "sag mir deine Rezepte Auswahl",
             "lass uns ein Rezept kochen",
-            "starte rezept auswahl"
+            "starte Rezept Auswahl"
           ],
           "slots": []
         },
@@ -80,7 +80,6 @@
           {
           "name": "LIST_OF_RECIPES",
           "values": [{
-            "id": "fiu3982fb9v2913982vb2f4g793",
             "name": {
               "value": "eggs benedict",
               "synonyms": []
