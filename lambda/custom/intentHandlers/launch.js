@@ -1,24 +1,22 @@
 const intents = require( './index' );
 
-const HelloWorldHandler = {
+const LaunchHandler = {
     canHandle(handlerInput) {
       const request = handlerInput.requestEnvelope.request;
-      // checks request type
-      return request.type === intents.LAUNCH_REQUEST
-        || (request.type === intents.INTENT_REQUEST
-          && request.intent.name === intents.HELLO_WORLD_INTENT );
+      return request.type === intents.LAUNCH_REQUEST;
     },
     handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-      const speakOutput = requestAttributes.t('HELLO_WORLD_MESSAGE');
-  
+      const speakOutput = requestAttributes.t('LAUNCH_MESSAGE');
+      const repromtOutput = requestAttributes.t('LAUNCH_REPROMT');
       return handlerInput.responseBuilder
         .speak(speakOutput)
         .withSimpleCard(requestAttributes.t('SKILL_NAME'), speakOutput)
+        .reprompt(repromtOutput)
         .getResponse();
     },
   };
 
   module.exports = {
-      HelloWorldHandler,
+    LaunchHandler,
   }

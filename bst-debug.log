@@ -430,3 +430,45 @@
     at TestRunner.runSuiteForLocale (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:209:35)
     at TestRunner.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:110:29)
     at Generator.next (<anonymous>)
+2019-06-29T14:17:58.362Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-06-29T14:17:58.365Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 67, column 3:
+      - response.outputSpeech.ssml: eg ... 
+      ^
+    at generateError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:439:21)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-06-29T14:18:40.582Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-06-29T14:18:40.585Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 67, column 3:
+      - response.outputSpeech.ssml: eg ... 
+      ^
+    at generateError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:439:21)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-06-29T14:19:19.549Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-06-29T14:19:19.552Z error: bst-test            YAMLException: bad indentation of a sequence entry at line 67, column 3:
+      - response.outputSpeech.ssml: eg ... 
+      ^
+    at generateError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readBlockSequence (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:972:7)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1369:12)
+    at readDocument (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1530:3)
+    at loadDocuments (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1586:5)
+    at Object.loadAll (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1594:19)
+    at TestParser.parse (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
+    at TestRunner.parseContents (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:439:21)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39

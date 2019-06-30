@@ -5,7 +5,9 @@ const Alexa = require('ask-sdk-core');
 
 const builtInHandlers = require( './intentHandlers/builtInHandler' );
 const errorHandlers = require( './intentHandlers/errorHandler' );
-const helloWorldHandlers = require( './intentHandlers/helloWorld' );
+const launchHandlers = require( './intentHandlers/launch' );
+const recipeHandlers = require('./intentHandlers/recipe');
+const cookingHandlers = require('./intentHandlers/cooking');
 
 const internationalization = require( './internationalization/internationalization' );
 
@@ -13,10 +15,12 @@ const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
   .addRequestHandlers(
-    helloWorldHandlers.HelloWorldHandler,
+    launchHandlers.LaunchHandler,
     builtInHandlers.HelpHandler,
     builtInHandlers.ExitHandler,
     builtInHandlers.FallbackHandler,
+    recipeHandlers.RecipeHandler,
+    cookingHandlers.CookingHandler,
     builtInHandlers.SessionEndedRequestHandler,
   )
   .addRequestInterceptors( internationalization.LocalizationInterceptor )
