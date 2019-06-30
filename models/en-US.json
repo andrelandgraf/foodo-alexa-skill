@@ -56,19 +56,6 @@
           "samples": []
         },
         {
-          "name": "CookingIntent",
-          "samples": [
-            "tell me your recipes",
-            "tell me recipes",
-            "what recipes do you know",
-            "list me the recipes",
-            "what recipes do you have",
-            "offer me your recipes",
-            "offer me the recipes list"
-          ],
-          "slots": []
-        },
-        {
           "name": "RecipeIntent",
           "samples": [
             "tell me your recipes",
