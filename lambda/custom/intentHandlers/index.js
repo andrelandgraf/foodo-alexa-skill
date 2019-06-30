@@ -4,7 +4,6 @@ const CANCEL_INTENT = 'AMAZON.CancelIntent';
 const STOP_INTENT = 'AMAZON.StopIntent';
 const HELP_INTENT = 'AMAZON.HelpIntent';
 const FALLBACK_INTENT = 'AMAZON.FallbackIntent';
-const HELLO_WORLD_INTENT = 'HelloWorldIntent';
 const RECIPE_INTENT = 'RecipeIntent';
 const COOKING_INTENT = 'CookingIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';

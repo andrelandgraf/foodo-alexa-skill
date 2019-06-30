@@ -56,17 +56,55 @@
           "samples": []
         },
         {
-          "name": "RecipeIntent",
+          "name": "CookingIntent",
           "samples": [
-            "cook with me",
-            "let us cook",
-            "start cooking",
-            "let us cook a recipe",
-            "start cooking together",
-            "let us cook together",
-            "start recipe selection"
+            "tell me your recipes",
+            "tell me recipes",
+            "what recipes do you know",
+            "list me the recipes",
+            "what recipes do you have",
+            "offer me your recipes",
+            "offer me the recipes list"
           ],
           "slots": []
+        },
+        {
+          "name": "RecipeIntent",
+          "samples": [
+            "tell me your recipes",
+            "tell me recipes",
+            "what recipes do you know",
+            "list me the recipes",
+            "what recipes do you have",
+            "offer me your recipes",
+            "offer me the recipes list"
+          ],
+          "slots": []
+        },
+        {
+          "name": "CookingIntent",
+          "samples": [
+            "cook {recipe}",
+            "let us cook {recipe}",
+            "start {recipe}",
+            "let us cook {recipe} together",
+            "let us start {recipe}"
+          ],
+          "slots": [{
+            "name": "recipe",
+            "type": "LIST_OF_RECIPES"
+          }]
+        }
+      ],
+      "types": [
+          {
+          "name": "LIST_OF_RECIPES",
+          "values": [{
+            "name": {
+              "value": "eggs benedict",
+              "synonyms": []
+            }
+          }]
         }
       ]
     }
