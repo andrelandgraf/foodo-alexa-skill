@@ -49,17 +49,43 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "RecipeIntent",
           "samples": [
-            "hallo",
-            "wie geht es dir",
-            "sag hi welt",
-            "sag hi",
-            "hi",
-            "sag hallo welt",
-            "sag hallo"
+            "koche mit mir",
+            "lass uns kochen",
+            "starte kochen",
+            "lass uns ein Rezept auswählen",
+            "lass uns zusammen kochen",
+            "lass uns ein Rezept kochen",
+            "starte rezept auswahl"
           ],
           "slots": []
+        },
+        {
+          "name": "CookingIntent",
+          "samples": [
+            "koche {recipe}",
+            "lass uns {recipe} kochen",
+            "starte {recipe}",
+            "lass uns {recipe} zusammen kochen",
+            "lass uns ein {recipe} kochen"
+          ],
+          "slots": [{
+            "name": "recipe",
+            "type": "LIST_OF_RECIPES"
+          }]
+        }
+      ],
+      "types": [
+          {
+          "name": "LIST_OF_RECIPES",
+          "values": [{
+            "id": "fiu3982fb9v2913982vb2f4g793",
+            "name": {
+              "value": "eggs benedict",
+              "synonyms": []
+            }
+          }]
         }
       ]
     }

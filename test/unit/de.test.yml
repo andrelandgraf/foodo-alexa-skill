@@ -60,3 +60,10 @@ configuration:
 - test: AMAZON.CancelIntent
 - LaunchRequest
 - AMAZON.CancelIntent: Auf Wiedersehen!
+
+---
+- test: CookingIntent.
+- CookingIntent recipe="eggs benedict": # Empty expected part means we are not testing the response
+  - response.outputSpeech.ssml: eggs benedict
+  - response.card: undefined
+- AMAZON.StopIntent: Auf Wiedersehen! # We can test only the expected outputSpeech like this

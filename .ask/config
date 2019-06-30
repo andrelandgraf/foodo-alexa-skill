@@ -5,14 +5,14 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "8daa548ec7e91d739b8e43cf8c4a24a4"
+          "eTag": "ca3332b953d4fd23ac574f09079352c8"
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "a7c1b305f3688d0546e85464a1b87ebe"
+            "eTag": "8486306af8704dd45a2e75636b7e8913"
           },
           "en-US": {
-            "eTag": "93e949936c24c6a910c9cd1ab69bd9d7"
+            "eTag": "d1d99fb3a2825e54b6bacbfdaed91030"
           }
         },
         "lambda": [
@@ -25,7 +25,7 @@
             "codeUri": "lambda/custom",
             "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
             "handler": "index.handler",
-            "revisionId": "0669374e-c297-4486-b4dc-f5ef7555928c",
+            "revisionId": "011fa526-2924-4a82-a9b5-5f298e7a7d7c",
             "runtime": "nodejs8.10"
           }
         ]

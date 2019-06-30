@@ -56,21 +56,17 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "RecipeIntent",
           "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
+            "cook with me",
+            "let us cook",
+            "start cooking",
+            "let us cook a recipe",
+            "start cooking together",
+            "let us cook together",
+            "start recipe selection"
           ],
           "slots": []
-        },
-        {
-          "name": "AMAZON.NavigateHomeIntent",
-          "samples": []
         }
       ]
     }
