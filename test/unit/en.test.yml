@@ -9,8 +9,6 @@
 # Learn more at https://read.bespoken.io/unit-testing/getting-started/
 #
 # Skill name: "foodo"
-# Test scope: LaunchRequest, HelloWorldIntent, AMAZON.HelpIntent, AMAZON.StopIntent, AMAZON.CancelIntent,
-#             AMAZON.FallbackIntent
 # Description: General test suite for all intents
 #=====================================================================================================================
 

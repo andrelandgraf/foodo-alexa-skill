@@ -16,6 +16,7 @@ const deData = {
       COOKING_REPROMT: 'Sag ja, wenn du dein Rezept verbessern willst, oder nein, wenn du es beibehalten möchtest. Du kannst auch auf unsere Website gehen und weitere Substitute Optionen nutzen.',
       SUBSTITUTE_MESSAGE: 'Wunderbar, wir haben dein Rezept ein ganzes Stück gesünder gemacht. Genaugenommen sparst du dir 12 Gramm Fett mit deinem Substitut! Guten Appetit!',
       NO_SUBSTITUTE_MESSAGE: 'Kein Problem, ich merke mir, dass du hierfür kein Substiute möchtest.',
+      PITCH_MESSAGE: 'Foodo ist dein Ernährungsexperte, dein Gefährte, dein Sam zu deinem Frodo, ich persönlich kann mir Foodo nicht mehr weg denken in meinem Leben, die App hilft mir meine Rezepte zu verwalten, sie iterativ zu verbessern und mich über neue Substiute zu informieren. Foodo ist mein eigen. Mein Schatz.',
     },
   };
 

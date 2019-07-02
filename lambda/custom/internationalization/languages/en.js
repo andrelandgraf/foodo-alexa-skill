@@ -15,6 +15,7 @@ const enData = {
         COOKING_REPROMT: 'Just say yes, if you want to substiute, or no, if you want to leave everything as it is. Also, check out our Website for more substitute options.',
         SUBSTITUTE_MESSAGE: 'Awesome, we have made your personal recipe healthier. In fact we saved you 12 grams of fat! Enjoy!',
         NO_SUBSTITUTE_MESSAGE: 'No Problem. I will remeber that you dont like to substitute this ingredient.',
+        PITCH_MESSAGE: 'Foodo is my nutrition expert, my personal companion, just my Sam to my Frodo, it helps me to cook it home, organizes my personal recipes and offers me new substitutes to become healthier over time. It is my precious!',
     },
 };
 

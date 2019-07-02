@@ -106,6 +106,19 @@
             "dont do that"
           ],
           "slots": []
+        },
+        {
+          "name": "PitchIntent",
+          "samples": [
+            "pitch",
+            "pitch me Foodo",
+            "explain Foodo to me",
+            "what is Foodo",
+            "about Foodo",
+            "why Foodo",
+            "explain me Foodo like it was Lord of the Rings"
+          ],
+          "slots": []
         }
       ],
       "types": [
