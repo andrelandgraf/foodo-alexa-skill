@@ -8,7 +8,6 @@ const ErrorHandler = {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
       return handlerInput.responseBuilder
         .speak(requestAttributes.t('ERROR_MESSAGE'))
-        .reprompt(requestAttributes.t('ERROR_MESSAGE'))
         .getResponse();
     },
   };

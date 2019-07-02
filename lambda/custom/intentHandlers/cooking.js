@@ -8,7 +8,6 @@ const CookingHandler = {
           && request.intent.name === intents.COOKING_INTENT;
     },
     handle(handlerInput) {
-      console.log(handlerInput.requestEnvelope.request.intent.slots);
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
       const recipe = handlerInput.requestEnvelope.request.intent.slots.recipe.value;
       const ingredient = 'Avocado';
@@ -16,7 +15,7 @@ const CookingHandler = {
       const repromtOutput = requestAttributes.t('COOKING_REPROMT');
       return handlerInput.responseBuilder
         .speak(speakOutput)
-        .repromt(repromtOutput)
+        .reprompt(repromtOutput)
         .getResponse();
     },
   };

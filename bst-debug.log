@@ -472,3 +472,767 @@
     at TestParser.parse (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/test/TestParser.js:115:30)
     at TestRunner.parseContents (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:439:21)
     at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:67:39
+2019-07-02T10:56:03.646Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.654Z error: bst-test            ReferenceError: HELLO_WORLD_INTENT is not defined
+    at Object.HELLO_WORLD_INTENT (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/index.js:18:5)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+    at Object.require (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/builtInHandler.js:1:17)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+2019-07-02T10:56:03.658Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.658Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.659Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.659Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.660Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.660Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.660Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.660Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.660Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.660Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.661Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.661Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.661Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.661Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.661Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.661Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.662Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.662Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.662Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.662Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.662Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.662Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.663Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.663Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.663Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.663Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.663Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.663Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.974Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.979Z error: bst-test            ReferenceError: HELLO_WORLD_INTENT is not defined
+    at Object.HELLO_WORLD_INTENT (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/index.js:18:5)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+    at Object.require (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/builtInHandler.js:1:17)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+2019-07-02T10:56:03.981Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.982Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.982Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.982Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.982Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.983Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.983Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.983Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.983Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.983Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.984Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.984Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.984Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.984Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.984Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.984Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.985Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.985Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.985Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.985Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.986Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.986Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T10:56:03.986Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T10:56:03.986Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:04.868Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:04.871Z error: bst-test            Error: Locale must be defined either in the testing.json or the test file itself under the config element
+    at TestRunner.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:125:17)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+    at new Promise (<anonymous>)
+    at TestRunner.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:97)
+    at TestRunner.runSuiteForLocale (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:209:35)
+    at TestRunner.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:110:29)
+    at Generator.next (<anonymous>)
+2019-07-02T11:02:04.974Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:04.974Z error: bst-test            YAMLException: name of an alias node must contain at least one character at line 59, column 34:
+      - response.outputSpeech.ssml: *
+                                     ^
+    at generateError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readAlias (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1281:5)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1379:20)
+    at readBlockMapping (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1099:11)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1370:12)
+    at readBlockSequence (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:965:5)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1401:45)
+    at readBlockMapping (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1099:11)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1370:12)
+2019-07-02T11:02:42.604Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.612Z error: bst-test            ReferenceError: HELLO_WORLD_INTENT is not defined
+    at Object.HELLO_WORLD_INTENT (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/index.js:18:5)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+    at Object.require (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/builtInHandler.js:1:17)
+    at Runtime._execModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:888:13)
+    at Runtime._loadModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:577:12)
+    at Runtime.requireModule (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:433:10)
+    at Runtime.requireModuleOrMock (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/jest-runtime/build/index.js:598:21)
+2019-07-02T11:02:42.616Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.617Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.618Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.618Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.619Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.619Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.619Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.620Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.620Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.620Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.620Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.620Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.620Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.621Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.621Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.621Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.621Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.622Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.622Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.622Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.622Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.622Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.622Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.623Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.623Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.623Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.623Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.623Z error: bst-test            TypeError: lambdaFunction is not a function
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:31:27
+    at new Promise (<anonymous>)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeFunction (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:21:16)
+    at Function.Object.<anonymous>.ModuleInvoker.invokeHandler (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/ModuleInvoker.js:18:30)
+    at LocalSkillInteractor.Object.<anonymous>.LocalSkillInteractor.invoke (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/LocalSkillInteractor.js:24:50)
+    at LocalSkillInteractor.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:65:41)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:32:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:13:53)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/impl/SkillInteractor.js:7:71
+    at new Promise (<anonymous>)
+2019-07-02T11:02:42.753Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:02:42.754Z error: bst-test            YAMLException: name of an alias node must contain at least one character at line 59, column 34:
+      - response.outputSpeech.ssml: *
+                                     ^
+    at generateError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:191:10)
+    at throwError (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:197:9)
+    at readAlias (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1281:5)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1379:20)
+    at readBlockMapping (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1099:11)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1370:12)
+    at readBlockSequence (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:965:5)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1401:45)
+    at readBlockMapping (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1099:11)
+    at composeNode (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/js-yaml-bespoken/lib/js-yaml/loader.js:1370:12)
+2019-07-02T11:31:22.165Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.167Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.171Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.171Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.177Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.177Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.187Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.187Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.189Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.189Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.192Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.192Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.193Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.194Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.195Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.195Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.197Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.197Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.199Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.199Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.201Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.201Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.202Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.202Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.208Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.208Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.209Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.209Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.491Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.494Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.498Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.498Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.504Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.505Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.514Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.514Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.516Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.516Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.518Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.518Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.519Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.520Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.521Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.521Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.522Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.522Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.523Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.524Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.525Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.525Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T11:31:22.527Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T11:31:22.527Z error: bst-test            TypeError: localizationClient.t is not a function
+    at Object.t (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/internationalization/internationalization.js:40:35)
+    at Object.t [as handle] (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/intentHandlers/errorHandler.js:10:34)
+    at GenericRequestDispatcher.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/lib/dispatcher/GenericRequestDispatcher.ts:146:32)
+    at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
+    at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
+    at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
