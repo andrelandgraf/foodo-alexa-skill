@@ -65,7 +65,7 @@ configuration:
 - test: CookingIntent.
 - CookingIntent recipe="eggs benedict":
   - response.outputSpeech.ssml: "*"
-  - reprompt: Sag ja, wenn du dein Rezept verändert willst, oder nein, wenn du es beihalten möchtest. Du kannst auch auf unsere Website gehen und weitere Substitute Optionen nutzen.
+  - reprompt: Sag ja, wenn du dein Rezept verbessern willst, oder nein, wenn du es beibehalten möchtest. Du kannst auch auf unsere Website gehen und weitere Substitute Optionen nutzen.
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
 
 ---
@@ -73,4 +73,16 @@ configuration:
 - RecipeIntent:
   - response.outputSpeech.ssml: Ich kenne folgende Rezepte. Eggs Benedict, Chicken Tikka Masala, Coconout-Carrot-Soup, Fried Potatoes, Pasta with Tomato-Mozarella-Sauce, Sausages with potatoes and vegetables.
   - reprompt: Wenn du alle Rezepte kennenlernen möchtest, dann besuche doch unsere Website.
+- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
+
+---
+- test: SubstituteIntent
+- SubstituteIntent:
+  - response.outputSpeech.ssml: Wunderbar, wir haben dein Rezept ein ganzes Stück gesünder gemacht. Genaugenommen sparst du dir 12 Gramm Fett mit deinem Substitut! Guten Appetit!
+- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
+
+---
+- test: NoSubstituteIntent
+- NoSubstituteIntent:
+  - response.outputSpeech.ssml: Kein Problem, ich merke mir, dass du hierfür kein Substiute möchtest.
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!

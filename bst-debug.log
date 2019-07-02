@@ -1236,3 +1236,15 @@
     at step (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:44:23)
     at Object.next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:25:53)
     at fulfilled (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/lambda/custom/node_modules/ask-sdk-runtime/dist/dispatcher/GenericRequestDispatcher.js:16:58)
+2019-07-02T12:21:35.941Z error: bst-test            Error using bst-test on Node: v10.15.0
+2019-07-02T12:21:35.944Z error: bst-test            SyntaxError: Unexpected token ] in JSON at position 2618
+    at JSON.parse (<anonymous>)
+    at Function.Object.<anonymous>.InteractionModel.fromFile (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/model/InteractionModel.js:45:25)
+    at VirtualAlexaBuilder.Object.<anonymous>.VirtualAlexaBuilder.create (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/virtual-alexa/lib/src/core/VirtualAlexa.js:164:57)
+    at VirtualAlexaInvoker.before (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/VirtualAlexaInvoker.js:58:48)
+    at TestRunner.<anonymous> (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:144:25)
+    at Generator.next (<anonymous>)
+    at asyncGeneratorStep (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:1:130)
+    at _next (/Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:194)
+    at /Users/anla/workspaces/andrelandgraf/foodoo-alexa-skill/node_modules/skill-testing-ml/dist/lib/runner/TestRunner.js:3:364
+    at new Promise (<anonymous>)

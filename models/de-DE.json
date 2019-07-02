@@ -74,6 +74,30 @@
             "name": "recipe",
             "type": "LIST_OF_RECIPES"
           }]
+        },
+        {
+          "name": "SubstituteIntent",
+          "samples": [
+            "ja",
+            "yes",
+            "starte substitution",
+            "okay",
+            "lass uns das machen",
+            "ok",
+            "Zustimmung"
+          ],
+          "slots": []
+        },
+        {
+          "name": "NoSubstituteIntent",
+          "samples": [
+            "nein",
+            "no",
+            "bitte nicht",
+            "nope",
+            "no substitution"
+          ],
+          "slots": []
         }
       ],
       "types": [
