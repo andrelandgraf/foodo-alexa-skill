@@ -64,7 +64,8 @@
             "list me the recipes",
             "what recipes do you have",
             "offer me your recipes",
-            "offer me the recipes list"
+            "offer me the recipes list",
+            "show me your recipes"
           ],
           "slots": []
         },

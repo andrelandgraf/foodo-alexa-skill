@@ -3,26 +3,29 @@
         "publishingInformation": {
         "locales": {
             "de-DE": {
-                "summary": "Kurze Beschreibung",
+                "summary": "Foodo ist dein persänlicher Ernährungsberater und Heimkochexperte!",
                 "examplePhrases": [
-                  "Alexa öffne Foodoo"
+                  "Alexa öffne Foodo",
+                  "Lass uns Eggs Benedict kochen",
+                  "Was für Rezepte kennst du?"
                 ],
-                "name": "Foodoo",
-                "description": "Volle Beschreibung des Skills und aller Intents"
+                "name": "Foodo",
+                "description": "Wir helfen dir gesünder zu werden und geben dir pfiffige Kochtipps. Hierfür stellen wir eine Auswahl an Standardrezepten bereit und gesunden Alternativen für die Zutaten, damit wir gemeinsam nach und nach deine persönlichen Rezepte gesünder machen!"
               },
               "en-US": {
-                "summary": "Learn about fun food items.",
+                "summary": "We help you to get healthier by offering smart home cooking tips.",
                 "examplePhrases": [
-                  "Alexa open Foodoo",
-                  "Alexa ask Foodoo for a dish"
+                  "Alexa open Foodo",
+                  "Let us cook Eggs Benedict",
+                  "What recipes do you have"
                 ],
                 "keywords": [
                   "nutrition",
                   "food items",
                   "recipes"
                 ],
-                "name": "Foodoo",
-                "description": "Sample Full Description"
+                "name": "Foodo",
+                "description": "Foodo is you personal nutrition expert and cooking companion for your home cooking activities. We provide a list of standard recipes and healthy substitutes to help you to improve your personal recipes. We focus on reaching your goals!"
               }
         },
         "isAvailableWorldwide": true,
