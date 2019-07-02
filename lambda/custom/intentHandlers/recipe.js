@@ -18,8 +18,9 @@ const RecipeHandler = {
     },
     handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-      const speakOutput = `${ requestAttributes.t('RECIPE_MESSAGE')} ${recipes.join(', ')}`;
+      const speakOutput = `${ requestAttributes.t('RECIPE_MESSAGE')} ${recipes.join(', ')}.`;
       const repromtOutput = requestAttributes.t('RECIPE_REPROMT');
+      console.log( speakOutput)
       return handlerInput.responseBuilder
         .speak(speakOutput)
         .reprompt(repromtOutput)

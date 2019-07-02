@@ -71,6 +71,6 @@ configuration:
 ---
 - test: RecipeIntent
 - RecipeIntent:
-  - response.outputSpeech.ssml: "*"
+  - response.outputSpeech.ssml: I know the following recipes. Eggs Benedict, Chicken Tikka Masala, Coconout-Carrot-Soup, Fried Potatoes, Pasta with Tomato-Mozarella-Sauce, Sausages with potatoes and vegetables.
   - reprompt: If you want to know more recipes, check out our Foodo website.
 - AMAZON.StopIntent: Foodo says Goodbye!

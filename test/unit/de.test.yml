@@ -71,6 +71,6 @@ configuration:
 ---
 - test: RecipeIntent
 - RecipeIntent:
-  - response.outputSpeech.ssml: "*"
+  - response.outputSpeech.ssml: Ich kenne folgende Rezepte. Eggs Benedict, Chicken Tikka Masala, Coconout-Carrot-Soup, Fried Potatoes, Pasta with Tomato-Mozarella-Sauce, Sausages with potatoes and vegetables.
   - reprompt: Wenn du alle Rezepte kennenlernen möchtest, dann besuche doch unsere Website.
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
