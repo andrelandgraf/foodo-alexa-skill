@@ -12,7 +12,7 @@ const deData = {
       LAUNCH_REPROMT: 'Wenn du nicht weißt, was du gerne essen willst, kannst du mich gerne fragen, welche Rezepte ich kenne.',
       RECIPE_MESSAGE: 'Ich kenne folgende Rezepte.',
       RECIPE_REPROMT: 'Wenn du alle Rezepte kennenlernen möchtest, dann besuche doch unsere Website.',
-      COOKING_MESSAGE: 'Lass uns {{recipe}} kochen! Wie ich sehe benutzt du {{ingredient}} in deinen Rezept. Wusstest du, dass es hierfür gesundere Substitute gibt? Willst du {{ingredient}} nicht durch etwas gesünderes ersetzen?',
+      COOKING_MESSAGE: 'Lass uns {{recipe}} kochen! Wie ich sehe benutzt du {{ingredient}} in deinem Rezept. Wusstest du, dass es gesündere Alternativen gibt? Willst du {{ingredient}} nicht durch etwas gesünderes ersetzen?',
       COOKING_REPROMT: 'Sag ja, wenn du dein Rezept verändert willst, oder nein, wenn du es beihalten möchtest. Du kannst auch auf unsere Website gehen und weitere Substitute Optionen nutzen.',
     },
   };
