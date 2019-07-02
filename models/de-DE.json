@@ -98,6 +98,19 @@
             "no substitution"
           ],
           "slots": []
+        },
+        {
+          "name": "PitchIntent",
+          "samples": [
+            "pitch",
+            "pitch mir Foodo",
+            "erklär mir Foodo",
+            "was ist Foodo",
+            "über Foodo",
+            "warum ist Foodo so cool",
+            "erklär mir Foodo als wäre es Herr der Ringe"
+          ],
+          "slots": []
         }
       ],
       "types": [

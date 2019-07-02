@@ -9,6 +9,7 @@ const COOKING_INTENT = 'CookingIntent';
 const SUBSTITUTE_INTENT = 'SubstituteIntent';
 const NO_SUBSTITUTE_INTNET = 'NoSubstituteIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';
+const PITCH_INTENT = 'PitchIntent';
 
 module.exports = {
     LAUNCH_REQUEST,
@@ -22,4 +23,5 @@ module.exports = {
     SUBSTITUTE_INTENT,
     NO_SUBSTITUTE_INTNET,
     SESSION_ENDED_REQUEST,
+    PITCH_INTENT,
 };
