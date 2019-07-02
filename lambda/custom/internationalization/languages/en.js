@@ -13,6 +13,8 @@ const enData = {
         RECIPE_REPROMT: 'If you want to know more recipes, check out our Foodo website.',
         COOKING_MESSAGE: 'Lets cook {{recipe}}! You are currently using {{ingredient}} in your recipe. Would you like to substitute {{ingredient}} with something more healthy?',
         COOKING_REPROMT: 'Just say yes, if you want to substiute, or no, if you want to leave everything as it is. Also, check out our Website for more substitute options.',
+        SUBSTITUTE_MESSAGE: 'Awesome, we have made your personal recipe healthier. In fact we saved you 12 grams of fat! Enjoy!',
+        NO_SUBSTITUTE_MESSAGE: 'No Problem. I will remeber that you dont like to substitute this ingredient.',
     },
 };
 
