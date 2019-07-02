@@ -2,14 +2,14 @@
 const deData = {
     translation: {
       SKILL_NAME: 'foodo',
-      HELP_MESSAGE: 'Frag mich welche Rezepte ich kenne, oder sag mir, was du heute kochen möchtest',
+      HELP_MESSAGE: 'Frag mich welche Rezepte ich kenne, oder sag mir, was du heute kochen möchtest.',
       HELP_REPROMPT: 'Was möchtest du heute kochen?',
-      FALLBACK_MESSAGE: 'Frag mich welche Rezepte ich kenne, oder sag mir, was du heute kochen möchtest',
+      FALLBACK_MESSAGE: 'Frag mich welche Rezepte ich kenne, oder sag mir, was du heute kochen möchtest.',
       FALLBACK_REPROMPT: 'Wie kann ich dir helfen?',
       ERROR_MESSAGE: 'Es ist ein Fehler aufgetreten.',
       STOP_MESSAGE: 'Foodo sagt Auf Wiedersehen!',
       LAUNCH_MESSAGE: 'Willkommen bei Foodo. Was würdest du heute gerne essen?',
-      LAUNCH_REPROMT: 'Wenn du nicht weißt, was du gerne essen willst, kannst du mich gerne fragen, welche Rezepte ich kenne',
+      LAUNCH_REPROMT: 'Wenn du nicht weißt, was du gerne essen willst, kannst du mich gerne fragen, welche Rezepte ich kenne.',
       RECIPE_MESSAGE: 'Ich kenne folgende Rezepte.',
       RECIPE_REPROMT: 'Wenn du alle Rezepte kennenlernen möchtest, dann besuche doch unsere Website.',
       COOKING_MESSAGE: 'Lass uns {{recipe}} kochen! Wie ich sehe benutzt du {{ingredient}} in deinen Rezept. Wusstest du, dass es hierfür gesundere Substitute gibt? Willst du {{ingredient}} nicht durch etwas gesünderes ersetzen?',

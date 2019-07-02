@@ -18,11 +18,11 @@ const RecipeHandler = {
     },
     handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-      const speakOutput = `${ requestAttributes.t('RECIPE_MESSAGE')} ${recipes.join(' ,')}`;
-      const repromtOutput = requestAttributes.t('RECIPE_REPROMT')
+      const speakOutput = `${ requestAttributes.t('RECIPE_MESSAGE')} ${recipes.join(', ')}`;
+      const repromtOutput = requestAttributes.t('RECIPE_REPROMT');
       return handlerInput.responseBuilder
         .speak(speakOutput)
-        .repromt(repromtOutput)
+        .reprompt(repromtOutput)
         .getResponse();
     },
   };
