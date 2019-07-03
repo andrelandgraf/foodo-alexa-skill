@@ -84,3 +84,15 @@ configuration:
 - NoSubstituteIntent:
   - response.outputSpeech.ssml: No Problem. I will remeber that you dont like to substitute this ingredient.
 - AMAZON.StopIntent: Foodo says Goodbye!
+
+---
+- test: PitchIntent
+- NoSubstituteIntent:
+  - response.outputSpeech.ssml: "*"
+- AMAZON.StopIntent: Foodo says Goodbye!
+
+---
+- test: NutriScoreIntent
+- NoSubstituteIntent:
+  - response.outputSpeech.ssml: "*"
+- AMAZON.StopIntent: Foodo says Goodbye!

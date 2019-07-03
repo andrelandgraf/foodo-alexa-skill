@@ -119,6 +119,20 @@
             "explain me Foodo like it was Lord of the Rings"
           ],
           "slots": []
+        },
+        {
+          "name": "NutriScoreIntent",
+          "samples": [
+            "what is the Nutri Score",
+            "about the Nutri Score",
+            "tell me something informative",
+            "tell me about the Nutri Score",
+            "explain me the Nutri Score",
+            "how do you compute substiutes",
+            "tell me about the substiution",
+            "how do you substitute"
+          ],
+          "slots": []
         }
       ],
       "types": [

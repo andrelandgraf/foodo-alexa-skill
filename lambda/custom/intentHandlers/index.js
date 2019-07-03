@@ -10,6 +10,7 @@ const SUBSTITUTE_INTENT = 'SubstituteIntent';
 const NO_SUBSTITUTE_INTNET = 'NoSubstituteIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';
 const PITCH_INTENT = 'PitchIntent';
+const NUTRI_SCORE_INTENT = 'NutriScoreIntent';
 
 module.exports = {
     LAUNCH_REQUEST,
@@ -24,4 +25,5 @@ module.exports = {
     NO_SUBSTITUTE_INTNET,
     SESSION_ENDED_REQUEST,
     PITCH_INTENT,
+    NUTRI_SCORE_INTENT,
 };

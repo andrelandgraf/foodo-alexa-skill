@@ -111,6 +111,20 @@
             "erklär mir Foodo als wäre es Herr der Ringe"
           ],
           "slots": []
+        },
+        {
+          "name": "NutriScoreIntent",
+          "samples": [
+            "was ist der Nutri Score",
+            "über den Nutri Score",
+            "erzähl mir etwas informatives",
+            "erklär mir den Nutri Score",
+            "erklär mit etwas",
+            "wie berechnest du substitute",
+            "erklär mir die Alternativen",
+            "wie substituiert ihr"
+          ],
+          "slots": []
         }
       ],
       "types": [
