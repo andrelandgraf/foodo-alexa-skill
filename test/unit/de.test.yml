@@ -82,5 +82,17 @@ configuration:
 ---
 - test: NoSubstituteIntent
 - NoSubstituteIntent:
-  - response.outputSpeech.ssml: Kein Problem, ich merke mir, dass du hierfür kein Substiute möchtest.
+  - response.outputSpeech.ssml: Kein Problem, ich merke mir, dass du hierfür kein Substitute möchtest.
+- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
+
+---
+- test: PitchIntent
+- NoSubstituteIntent:
+  - response.outputSpeech.ssml: "*"
+- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
+
+---
+- test: NutriScoreIntent
+- NoSubstituteIntent:
+  - response.outputSpeech.ssml: "*"
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
