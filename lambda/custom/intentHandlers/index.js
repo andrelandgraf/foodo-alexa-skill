@@ -6,8 +6,6 @@ const HELP_INTENT = 'AMAZON.HelpIntent';
 const FALLBACK_INTENT = 'AMAZON.FallbackIntent';
 const RECIPE_INTENT = 'RecipeIntent';
 const COOKING_INTENT = 'CookingIntent';
-const SUBSTITUTE_INTENT = 'SubstituteIntent';
-const NO_SUBSTITUTE_INTNET = 'NoSubstituteIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';
 const PITCH_INTENT = 'PitchIntent';
 const NUTRI_SCORE_INTENT = 'NutriScoreIntent';
@@ -21,8 +19,6 @@ module.exports = {
     FALLBACK_INTENT,
     RECIPE_INTENT,
     COOKING_INTENT,
-    SUBSTITUTE_INTENT,
-    NO_SUBSTITUTE_INTNET,
     SESSION_ENDED_REQUEST,
     PITCH_INTENT,
     NUTRI_SCORE_INTENT,
