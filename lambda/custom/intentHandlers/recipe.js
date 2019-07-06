@@ -7,6 +7,9 @@ const recipes = [
     'Fried Potatoes',
     'Pasta with Tomato-Mozarella-Sauce',
     'Sausages with potatoes and vegetables',
+    'Lasagna',
+    'Pizza Dough',
+    'Chocolate Souffle',
 ];
 
 const RecipeHandler = {

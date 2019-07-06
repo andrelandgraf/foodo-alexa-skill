@@ -8,7 +8,6 @@ const errorHandlers = require( './intentHandlers/errorHandler' );
 const launchHandlers = require( './intentHandlers/launch' );
 const recipeHandlers = require('./intentHandlers/recipe');
 const cookingHandlers = require('./intentHandlers/cooking');
-const substiuteHandlers = require('./intentHandlers/substitute');
 const pitchHandlers = require('./intentHandlers/pitch');
 
 const internationalization = require( './internationalization/internationalization' );
@@ -23,8 +22,6 @@ exports.handler = skillBuilder
     builtInHandlers.FallbackHandler,
     recipeHandlers.RecipeHandler,
     cookingHandlers.CookingHandler,
-    substiuteHandlers.SubstituteHandler,
-    substiuteHandlers.NoHandler,
     builtInHandlers.SessionEndedRequestHandler,
     pitchHandlers.PitchHandler,
   )

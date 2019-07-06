@@ -74,25 +74,13 @@ configuration:
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
 
 ---
-- test: SubstituteIntent
-- SubstituteIntent:
-  - response.outputSpeech.ssml: Wunderbar, wir haben dein Rezept ein ganzes Stück gesünder gemacht. Genaugenommen sparst du dir 12 Gramm Fett mit deinem Substitut! Guten Appetit!
-- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
-
----
-- test: NoSubstituteIntent
-- NoSubstituteIntent:
-  - response.outputSpeech.ssml: Kein Problem, ich merke mir, dass du hierfür kein Substitute möchtest.
-- AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
-
----
 - test: PitchIntent
-- NoSubstituteIntent:
+- PitchIntent:
   - response.outputSpeech.ssml: "*"
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
 
 ---
 - test: NutriScoreIntent
-- NoSubstituteIntent:
+- NutriScoreIntent:
   - response.outputSpeech.ssml: "*"
 - AMAZON.StopIntent: Foodo sagt Auf Wiedersehen!
