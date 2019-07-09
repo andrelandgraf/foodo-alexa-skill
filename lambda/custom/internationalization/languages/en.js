@@ -16,10 +16,10 @@ const enData = {
         SUBSTITUTE_MESSAGE: 'Awesome, we have made your personal recipe healthier. In fact we saved you 12 grams of fat! Enjoy!',
         NO_SUBSTITUTE_MESSAGE: 'No Problem. I will remeber that you dont like to substitute this ingredient.',
         PITCH_MESSAGE: 'Foodo is my nutrition expert, my personal companion, just my Sam to my Frodo, it helps me to cook it home, organizes my personal recipes and offers me new substitutes to become healthier over time. It is my precious!',
-        NUTRI_SCORE_MESSAGE: 'The Nutri Score is a scala that rates ingredients and food items according to their bad fats. It goes from the scores 0 to 15 and categorizes the grades A to D, where A is healthy and D unhealthy. We use the Nutri Score to compute healthy substiutes for your personal recipes!'
+        NUTRI_SCORE_MESSAGE: 'The Nutri Score is a scala that rates ingredients and food items according to their bad fats. It goes from the scores 0 to 15 and categorizes the grades A to D, where A is healthy and D unhealthy. We use the Nutri Score to compute healthy substiutes for your personal recipes!',
     },
 };
 
 module.exports = {
     enData,
-}
+};

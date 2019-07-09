@@ -44,11 +44,6 @@ const postAuthRequest = ( data, headers ) => axios
         throw Error( `${ err.response.data.code }:${ err.response.message }` );
     } );
 
-const getAuthorizeCode = ( clientId, state, redirectUri ) => {
-    const params = `?client_id=${ clientId }&response_type=code&state=${ state }&redirect_uri=${ redirectUri }`;
-    return fetch( `${ API }${ ENDPOINTS.AUTHORIZE }${ params }`, { headers: getCodeHeaders() } );
-};
-
 /**
  *  refreshAuthToken gets called to retrieve a new access token via the refresh token
  * @param {Function} resolve
@@ -74,6 +69,5 @@ module.exports = {
     getTokenHeaders,
     getCodeHeaders,
     postAuthRequest,
-    getAuthorizeCode,
     refreshAuthToken,
 };
