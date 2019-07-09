@@ -1,10 +1,10 @@
-import qs from 'qs';
+const qs = require( 'qs' );
 
-import { ENDPOINTS } from '../api';
-import { postAuthRequest } from '../oAuthService';
-import { getRequest } from '../httpService';
+const { ENDPOINTS } = require('../api');
+const { postAuthRequest } = require('../oAuthService');
+const { getRequest } = require('../httpService');
 
-export const getAuthToken = handlerInput => handlerInput.requestEnvelope.context
+const getAuthToken = handlerInput => handlerInput.requestEnvelope.context
     .System.user.accessToken;
 
 /**
@@ -13,13 +13,20 @@ export const getAuthToken = handlerInput => handlerInput.requestEnvelope.context
  * @param {*} header
  * @returns {Object} user object
  */
-export const authenticate = ( data, header, handlerInput ) =>
+const authenticate = ( data, header, handlerInput ) =>
     postAuthRequest( qs.stringify( data ), header, handlerInput )
         .then( ( res ) => res.data.user );
 
-export const getUser = handlerInput => getRequest(
+const getUser = handlerInput => getRequest(
     `${ ENDPOINTS.USER }${ ENDPOINTS.USER_ENDPOINTS.ME }`, handlerInput
     );
 
-export const isAuthenticated = handlerInput => !!handlerInput.requestEnvelope.context
+const isAuthenticated = handlerInput => !!handlerInput.requestEnvelope.context
     .System.user.accessToken;
+
+module.exports = {
+    getAuthToken,
+    authenticate,
+    getUser,
+    isAuthenticated,
+}
