@@ -62,7 +62,7 @@ const CookingHandler = {
         }
 
         if ( selectSubstitute.value ) {
-            substitute( handlerInput );
+            substitute( selectSubstitute.value, handlerInput );
             return handlerInput.responseBuilder
                 .speak( 'Coolioo, ich habe Substituiert!' )
                 .getResponse();
