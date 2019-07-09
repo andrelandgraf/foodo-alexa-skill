@@ -29,13 +29,14 @@ const postRequest = ( endpoint, data, handlerInput ) => axios
     .post( API + endpoint, data, { headers: postHeaders( handlerInput ) } )
     .then( res => res.data )
     .catch( ( err ) => {
+        console.log( err );
         const { status } = err.response;
         if ( isUnauthorizedError( status ) ) {
             return refreshAuthToken(
                 () => postRequest( endpoint, data, handlerInput ),
             );
         }
-        throw Error( `${ err.response.data.code }:${ err.response.message }` );
+        throw Error( status );
     } );
 
 const putRequest = ( endpoint, data, handlerInput ) => axios

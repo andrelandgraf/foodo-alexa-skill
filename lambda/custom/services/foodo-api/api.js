@@ -24,6 +24,7 @@ const ENDPOINTS = {
     COOKING: 'cooking',
     COOKING_ENDPOINTS: {
         START: '/start',
+        SUBSTITUTES: '/substitutes',
         SUBSTITUTE: '/substitute/',
         BLOCK: '/block',
     },
