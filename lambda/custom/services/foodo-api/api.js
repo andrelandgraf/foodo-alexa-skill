@@ -35,4 +35,4 @@ const ENDPOINTS = {
 module.exports = {
     API,
     ENDPOINTS,
-}
+};
