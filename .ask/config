@@ -5,7 +5,7 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "b8e40aa5accb16448abb773a022aa4b3"
+          "eTag": "bfd7e71007e1a2f7dcd9cb264417ee1d"
         },
         "interactionModel": {
           "de-DE": {
@@ -25,7 +25,7 @@
             "codeUri": "lambda/custom",
             "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
             "handler": "index.handler",
-            "revisionId": "bdf9118b-ba1d-4045-85fa-0dfc6af81f85",
+            "revisionId": "69081a32-7c69-4cdd-8377-9b8068a4c4ee",
             "runtime": "nodejs8.10"
           }
         ]

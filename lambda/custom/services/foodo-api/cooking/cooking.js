@@ -18,6 +18,7 @@ const substitute = ( selectedNumber, handlerInput ) => getRequest(
 
 const blockSubstitution = handlerInput => postRequest(
     `${ ENDPOINTS.COOKING }${ ENDPOINTS.COOKING_ENDPOINTS.BLOCK }`,
+    {},
     handlerInput,
 );
 

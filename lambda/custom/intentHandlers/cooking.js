@@ -53,7 +53,7 @@ const CookingHandler = {
         const { selectSubstitute } = currentIntent.slots;
         if ( yesNoSubstitute.value === 'ja' && !selectSubstitute.value ) {
             const substitutes = await getSubstitutes( handlerInput );
-            const speakOutput = `Sag 1, 2, oder 3 um eines der folgenden Substiute auszuwählen.${ getSubstiuteNames( substitutes ) }`;
+            const speakOutput = `Sag 1, 2, oder 3 um eines der folgenden Substitutes auszuwählen ${ getSubstiuteNames( substitutes ) }`;
             return handlerInput.responseBuilder
                 .speak( speakOutput )
                 .reprompt( 'Sag, 1, 2 oder 3.' )

@@ -9,6 +9,11 @@
                   "Lass uns Eggs Benedict kochen",
                   "Was für Rezepte kennst du?"
                 ],
+                "keywords": [
+                  "ernährung",
+                  "zutaten",
+                  "rezepte"
+                ],
                 "name": "Foodo",
                 "description": "Wir helfen dir gesünder zu werden und geben dir pfiffige Kochtipps. Hierfür stellen wir eine Auswahl an Standardrezepten bereit und gesunden Alternativen für die Zutaten, damit wir gemeinsam nach und nach deine persönlichen Rezepte gesünder machen!"
               },
