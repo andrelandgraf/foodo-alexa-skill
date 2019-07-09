@@ -1,4 +1,5 @@
 const axios = require( 'axios' );
+
 const { isUnauthorizedError } = require( '../utilities/httpProtocol' );
 const { API } = require( './api' );
 const { refreshAuthToken } = require( './oAuthService' );
