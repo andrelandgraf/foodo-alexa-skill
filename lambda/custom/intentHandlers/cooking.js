@@ -1,6 +1,14 @@
 const intents = require( './index' );
+const { RECIPES } = require( './recipe' );
 
-const { startCooking } = require( '../services/foodo-api/cooking/cooking' );
+const {
+    startCooking, blockSubstitution, substitute, getSubstitutes,
+} = require( '../services/foodo-api/cooking/cooking' );
+
+const findRecipe = recipeName => RECIPES.find( r => r.toLowerCase() === recipeName.toLowerCase() );
+
+const getSubstiuteNames = substitutes => substitutes
+    .map( s => s.substitute.name.de ).join( ', ' );
 
 const CookingHandler = {
     canHandle( handlerInput ) {
@@ -23,8 +31,8 @@ const CookingHandler = {
 
         const { yesNoSubstitute } = currentIntent.slots;
         if ( !yesNoSubstitute.value ) {
-            const payload = await startCooking( recipe.value );
-            const ingredient = payload.possibleSubstitution.original.name.de;
+            const payload = await startCooking( findRecipe( recipe.value ), handlerInput );
+            const ingredient = payload.possibleSubstitutes.original.name.de;
             const speakOutput = requestAttributes.t( 'COOKING_MESSAGE', { recipe: recipe.value, ingredient } );
             const repromptOutput = requestAttributes.t( 'COOKING_REPROMT' );
             return handlerInput.responseBuilder
@@ -35,6 +43,7 @@ const CookingHandler = {
         }
 
         if ( yesNoSubstitute.value === 'nein' ) {
+            blockSubstitution( handlerInput );
             const speakOutput = requestAttributes.t( 'NO_SUBSTITUTE_MESSAGE' );
             return handlerInput.responseBuilder
                 .speak( speakOutput )
@@ -43,14 +52,17 @@ const CookingHandler = {
 
         const { selectSubstitute } = currentIntent.slots;
         if ( yesNoSubstitute.value === 'ja' && !selectSubstitute.value ) {
+            const substitutes = await getSubstitutes( handlerInput );
+            const speakOutput = `Sag 1, 2, oder 3 um eines der folgenden Substiute auszuwählen.${ getSubstiuteNames( substitutes ) }`;
             return handlerInput.responseBuilder
-                .speak( 'dynamischer substiute vorschlag, willst du 1 2 oder 3?' )
-                .reprompt( ' willst du 1 2 oder 3?' )
+                .speak( speakOutput )
+                .reprompt( 'Sag, 1, 2 oder 3.' )
                 .addElicitSlotDirective( 'selectSubstitute' )
                 .getResponse();
         }
 
         if ( selectSubstitute.value ) {
+            substitute( handlerInput );
             return handlerInput.responseBuilder
                 .speak( 'Coolioo, ich habe Substituiert!' )
                 .getResponse();
