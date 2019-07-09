@@ -6,7 +6,7 @@ const CookingHandler = {
       return request.type === intents.INTENT_REQUEST
           && request.intent.name === intents.COOKING_INTENT;
     },
-    handle(handlerInput) {
+    async handle(handlerInput) {
       const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
       const currentIntent = handlerInput.requestEnvelope.request.intent;
       const recipe = currentIntent.slots.recipe;
@@ -21,7 +21,8 @@ const CookingHandler = {
 
       const yesNoSubstitute = currentIntent.slots.yesNoSubstitute;
       if ( !yesNoSubstitute.value ) {
-        const ingredient = 'Avocado';
+        const payload = await startCooking( recipe.value );
+        const ingredient = payload.possibleSubstitution.original.name[ 'de' ];
         const speakOutput = requestAttributes.t('COOKING_MESSAGE', { recipe: recipe.value, ingredient } );
         const repromptOutput = requestAttributes.t('COOKING_REPROMT');
         return handlerInput.responseBuilder

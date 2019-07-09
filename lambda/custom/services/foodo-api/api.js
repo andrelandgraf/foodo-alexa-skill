@@ -1,7 +1,7 @@
-import { isDevelopment } from '../../utilities/env';
+const env = require( '../../env' );
 
-export const API = isDevelopment ? 'http://localhost:3333/' : process.env.REACT_APP_BACKEND_API;
-export const ENDPOINTS = {
+const API = env.BACKEND_API;
+const ENDPOINTS = {
     AUTHENTICATE: 'auth/token',
     AUTHORIZE: 'auth/authorize',
     USER: 'user',
@@ -21,7 +21,18 @@ export const ENDPOINTS = {
     RECIPES_ENDPOINTS: {
         SUBSTITUTES: '/substitutes',
     },
+    COOKING: 'cooking',
+    COOKING_ENDPOINTS: {
+        START: '/start',
+        SUBSTITUTE: '/substitute/',
+        BLOCK: '/block',
+    },
     INGREDIENTS: 'ingredients',
     CATEGORIES: 'categories',
     INGREDIENT_BY_GROUPS: 'ingredients/groups/',
 };
+
+module.exports = {
+    API,
+    ENDPOINTS,
+}

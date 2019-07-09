@@ -3,5 +3,5 @@ const dotenv = require( 'dotenv' );
 dotenv.config();
 
 module.exports = {
-    'envvar': process.env.CONSTANT_NAME,
+    'BACKEND_API': process.env.BACKEND_API,
 };

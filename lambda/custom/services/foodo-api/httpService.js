@@ -1,9 +1,8 @@
-import axios from 'axios';
-
-import { isUnauthorizedError } from '../utilities/httpProtocol';
-import { API } from './api';
-import { refreshAuthToken } from './oAuthService';
-import { getAuthToken, isAuthenticated } from './user/userService';
+const axios = require( 'axios' );
+const { isUnauthorizedError } = require( '../utilities/httpProtocol' );
+const { API } = require( './api' );
+const { refreshAuthToken } = require( './oAuthService' );
+const { getAuthToken, isAuthenticated } = require( './user/userService' );
 
 function getHeaders( handlerInput ) {
     if ( isAuthenticated( handlerInput) ) {
@@ -25,7 +24,7 @@ function postHeaders( handlerInput ) {
     return { 'content-type': 'application/json', };
 }
 
-export const postRequest = ( endpoint, data, handlerInput ) => axios
+const postRequest = ( endpoint, data, handlerInput ) => axios
     .post( API + endpoint, data, { headers: postHeaders(handlerInput) } )
     .then( res => res.data )
     .catch( ( err ) => {
@@ -38,7 +37,7 @@ export const postRequest = ( endpoint, data, handlerInput ) => axios
         throw Error( `${ err.response.data.code }:${ err.response.message }` );
     } );
 
-export const putRequest = ( endpoint, data, handlerInput ) => axios
+const putRequest = ( endpoint, data, handlerInput ) => axios
     .put( API + endpoint, data, { headers: postHeaders(handlerInput) } )
     .then( res => res.data )
     .catch( ( err ) => {
@@ -51,7 +50,7 @@ export const putRequest = ( endpoint, data, handlerInput ) => axios
         throw Error( `${ err.response.data.code }:${ err.response.message }` );
     } );
 
-export const deleteRequest = ( endpoint, data, handlerInput ) => axios
+const deleteRequest = ( endpoint, data, handlerInput ) => axios
     .delete( API + endpoint, { headers: postHeaders(handlerInput), data } )
     .then( res => res.data )
     .catch( ( err ) => {
@@ -64,7 +63,7 @@ export const deleteRequest = ( endpoint, data, handlerInput ) => axios
         throw Error( `${ err.response.data.code }:${ err.response.message }` );
     } );
 
-export const getRequest = ( endpoint, handlerInput ) => axios
+const getRequest = ( endpoint, handlerInput ) => axios
     .get( API + endpoint, { headers: getHeaders(handlerInput) } )
     .then( res => res.data )
     .catch( ( err ) => {
@@ -76,3 +75,12 @@ export const getRequest = ( endpoint, handlerInput ) => axios
         }
         throw Error( `${ err.response.data.code }:${ err.response.message }` );
     } );
+
+module.exports = {
+    postRequest,
+    getRequest,
+    deleteRequest,
+    putRequest,
+    postHeaders,
+    getHeaders,
+};
