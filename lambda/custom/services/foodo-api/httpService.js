@@ -1,9 +1,11 @@
 const axios = require( 'axios' );
-
-const { isUnauthorizedError } = require( '../httpProtocol' );
 const { API } = require( './api' );
-const { refreshAuthToken } = require( './oAuthService' );
-const { getAuthToken, isAuthenticated } = require( './user/userService' );
+
+const getAuthToken = handlerInput => handlerInput.requestEnvelope.context
+    .System.user.accessToken;
+
+const isAuthenticated = handlerInput => !!handlerInput.requestEnvelope.context
+    .System.user.accessToken;
 
 function getHeaders( handlerInput ) {
     if ( isAuthenticated( handlerInput ) ) {
@@ -31,11 +33,6 @@ const postRequest = ( endpoint, data, handlerInput ) => axios
     .catch( ( err ) => {
         console.log( err );
         const { status } = err.response;
-        if ( isUnauthorizedError( status ) ) {
-            return refreshAuthToken(
-                () => postRequest( endpoint, data, handlerInput ),
-            );
-        }
         throw Error( status );
     } );
 
@@ -44,12 +41,7 @@ const putRequest = ( endpoint, data, handlerInput ) => axios
     .then( res => res.data )
     .catch( ( err ) => {
         const { status } = err.response;
-        if ( isUnauthorizedError( status ) ) {
-            return refreshAuthToken(
-                () => putRequest( endpoint, data, handlerInput ),
-            );
-        }
-        throw Error( `${ err.response.data.code }:${ err.response.message }` );
+        throw Error( status );
     } );
 
 const deleteRequest = ( endpoint, data, handlerInput ) => axios
@@ -57,12 +49,7 @@ const deleteRequest = ( endpoint, data, handlerInput ) => axios
     .then( res => res.data )
     .catch( ( err ) => {
         const { status } = err.response;
-        if ( isUnauthorizedError( status ) ) {
-            return refreshAuthToken(
-                () => deleteRequest( endpoint, data, handlerInput ),
-            );
-        }
-        throw Error( `${ err.response.data.code }:${ err.response.message }` );
+        throw Error( status );
     } );
 
 const getRequest = ( endpoint, handlerInput ) => axios
@@ -70,12 +57,7 @@ const getRequest = ( endpoint, handlerInput ) => axios
     .then( res => res.data )
     .catch( ( err ) => {
         const { status } = err.response;
-        if ( isUnauthorizedError( status ) ) {
-            return refreshAuthToken(
-                () => getRequest( endpoint, handlerInput ),
-            );
-        }
-        throw Error( `${ err.response.data.code }:${ err.response.message }` );
+        throw Error( status );
     } );
 
 module.exports = {

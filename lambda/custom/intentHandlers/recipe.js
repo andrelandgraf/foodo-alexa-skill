@@ -8,7 +8,7 @@ const RECIPES = [
     'Pasta with Tomato-Mozarella-Sauce',
     'Sausages with potatoes and vegetables',
     'Lasagna',
-    'Pizza Dough',
+    'Pizza dough',
     'Chocolate Souffle',
 ];
 
@@ -21,7 +21,7 @@ const RecipeHandler = {
     },
     handle( handlerInput ) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
-        const speakOutput = `${ requestAttributes.t( 'RECIPE_MESSAGE' ) } ${ RECIPES.join( ', ' ) }.`;
+        const speakOutput = `<speak>${ requestAttributes.t( 'RECIPE_MESSAGE' ) } <lang xml:lang="en-US"> ${ RECIPES.join( ', ' ) }.</lang></speak>`;
         const repromtOutput = requestAttributes.t( 'RECIPE_REPROMT' );
         return handlerInput.responseBuilder
             .speak( speakOutput )
