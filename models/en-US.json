@@ -70,6 +70,19 @@
           "slots": []
         },
         {
+          "name": "PotatoeIntent",
+          "samples": [
+              "What's taters precious what's taters",
+              "What's taters",
+              "show me your taters",
+              "what are taters my precious",
+              "whats a tater",
+              "what is a tater",
+              "tell me what are taters"
+          ],
+          "slots": []
+        },
+        {
           "name": "CookingIntent",
           "samples": [
             "cook {recipe}",
