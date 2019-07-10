@@ -64,7 +64,7 @@ const CookingHandler = {
         if ( selectSubstitute.value ) {
             const substituted = await substitute( selectSubstitute.value, handlerInput );
             return handlerInput.responseBuilder
-                .speak( `Super, ich habe ${ substituted.ingredient.de } durch ${ substituted.original.de } ersetzt` )
+                .speak( `Super, ich habe ${ substituted.original.de } durch ${ substituted.ingredient.de } ersetzt` )
                 .getResponse();
         }
 
