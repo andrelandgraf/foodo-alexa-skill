@@ -86,10 +86,11 @@
           "name": "CookingIntent",
           "samples": [
             "cook {recipe}",
-            "let us cook {recipe}",
-            "start {recipe}",
-            "let us cook {recipe} together",
-            "let us start {recipe}"
+            "to cook {recipe}",
+            "to let us cook {recipe}",
+            "to start {recipe}",
+            "to let us cook {recipe} together",
+            "to let us start {recipe}"
           ],
           "slots": [
               {
