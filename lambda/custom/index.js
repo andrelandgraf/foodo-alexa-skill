@@ -8,6 +8,7 @@ const recipeHandlers = require( './intentHandlers/recipe' );
 const cookingHandlers = require( './intentHandlers/cooking' );
 const pitchHandlers = require( './intentHandlers/pitch' );
 const potatoeHandlers = require( './intentHandlers/potatoe' );
+const nutriScoreHandler = require( './intentHandlers/nutriScore' );
 
 const internationalization = require( './internationalization/internationalization' );
 
@@ -24,6 +25,7 @@ exports.handler = skillBuilder
         builtInHandlers.SessionEndedRequestHandler,
         pitchHandlers.PitchHandler,
         potatoeHandlers.PotatoeHandler,
+        nutriScoreHandler.NutriScoreHandler,
     )
     .addRequestInterceptors( internationalization.LocalizationInterceptor )
     .addErrorHandlers( errorHandlers.ErrorHandler )

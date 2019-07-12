@@ -9,7 +9,7 @@
         },
         "interactionModel": {
           "de-DE": {
-            "eTag": "9c93028799c6719cf308020ea3d46b14"
+            "eTag": "b6991ec81939163af09689e845f81ee1"
           },
           "en-US": {
             "eTag": "e2fca1270e9d7e6f4b1ac6d008ec3d65"
@@ -25,7 +25,7 @@
             "codeUri": "lambda/custom",
             "functionName": "serverlessrepo-foodoo-lam-alexaskillskitnodejsfact-Z29AE6Z4VM8W",
             "handler": "index.handler",
-            "revisionId": "c19475de-4bc7-4db0-be86-ce26ea255634",
+            "revisionId": "5b600aac-b05d-4762-b040-de70ff6fc701",
             "runtime": "nodejs8.10"
           }
         ]

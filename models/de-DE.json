@@ -241,7 +241,7 @@
             {
               "name": "yesNoSubstitute",
               "type": "YES_NO_TYPE",
-              "elicitationRequired": true,
+              "elicitationRequired": false,
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-yesNoSubstitute"
@@ -259,7 +259,7 @@
             {
               "name": "selectSubstitute",
               "type": "AMAZON.NUMBER",
-              "elicitationRequired": true,
+              "elicitationRequired": false,
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Intent-RecommendationIntent.IntentSlot-selectSubstitute"
