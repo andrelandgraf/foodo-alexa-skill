@@ -9,12 +9,10 @@ const LaunchHandler = {
     async handle( handlerInput ) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
         const user = await userService.getUser( handlerInput );
-        console.log( JSON.stringify( user ) );
         const speakOutput = requestAttributes.t( 'LAUNCH_MESSAGE', { name: user.username } );
         const repromtOutput = requestAttributes.t( 'LAUNCH_REPROMT' );
         return handlerInput.responseBuilder
             .speak( speakOutput )
-            .withSimpleCard( requestAttributes.t( 'SKILL_NAME' ), speakOutput )
             .reprompt( repromtOutput )
             .getResponse();
     },
