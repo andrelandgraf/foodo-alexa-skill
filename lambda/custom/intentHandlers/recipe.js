@@ -3,7 +3,7 @@ const intents = require( './index' );
 const RECIPES = [
     'Eggs Benedict',
     'Chicken Tikka Masala',
-    'Coconout-Carrot-Soup',
+    'Coconut-Carrot-Soup',
     'Fried Potatoes',
     'Pasta with Tomato-Mozarella-Sauce',
     'Sausages with potatoes and vegetables',
