@@ -9,8 +9,8 @@ const findRecipe = recipeName => RECIPES.find( r => ( r.includes( '-' )
         && r.replace( /[-]/g, ' ' ).toLowerCase() === recipeName.toLowerCase() )
     || r.toLowerCase() === recipeName.toLowerCase() );
 
-const getSubstiuteNames = substitutes => substitutes
-    .map( s => s.substitute.name.de ).join( ', ' );
+const getSubstituteNames = ( substitutes, locale ) => substitutes
+    .map( s => s.substitute.name[ locale ] ).join( ', ' );
 
 const CookingHandler = {
     canHandle( handlerInput ) {
@@ -20,26 +20,29 @@ const CookingHandler = {
     },
     async handle( handlerInput ) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
+        const locale = handlerInput.requestEnvelope.request.locale.substring( 0, 2 );
         const currentIntent = handlerInput.requestEnvelope.request.intent;
         const { recipe } = currentIntent.slots;
 
         if ( !recipe.value ) {
+            const speakOutput = requestAttributes.t( 'NO_RECIPE_CHOSEN' );
             return handlerInput.responseBuilder
-                .speak( 'Super, lass uns kochen! Wonach steht dir denn der Sinn?' )
-                .reprompt( 'Was würdest du gerne kochen?' )
+                .speak( speakOutput )
                 .addElicitSlotDirective( 'recipe' )
                 .getResponse();
         }
 
-        if ( recipe.value === 'nein' ) {
+        if ( recipe.value === 'nein' || recipe.value === 'no' ) {
+            const speakOutput = requestAttributes.t( 'NO_NEXT_RECIPE' );
             return handlerInput.responseBuilder
-                .speak( 'Alles klar, dann guten Appetit!' )
+                .speak( speakOutput )
                 .getResponse();
         }
 
-        if ( recipe.value === 'ja' ) {
+        if ( recipe.value === 'ja' || recipe.value === 'yes' ) {
+            const speakOutput = requestAttributes.t( 'NEXT_RECIPE_MESSAGE', { recipes: RECIPES.join( ', ' ) } );
             return handlerInput.responseBuilder
-                .speak( `<speak>Alles klar, welches Rezept möchtest du stattdessen kochen? ${ requestAttributes.t( 'NEXT_RECIPE_MESSAGE' ) } <lang xml:lang="en-US"> ${ RECIPES.join( ', ' ) }.</lang></speak>`  )
+                .speak( speakOutput )
                 .addElicitSlotDirective( 'recipe' )
                 .getResponse();
         }
@@ -51,7 +54,7 @@ const CookingHandler = {
             let speakOutput;
 
             if ( payload.possibleSubstitutes ) {
-                const ingredient = payload.possibleSubstitutes.original.name.de;
+                const ingredient = payload.possibleSubstitutes.original.name[ locale ];
                 speakOutput = requestAttributes.t( 'COOKING_MESSAGE', { recipe: recipe.value, ingredient } );
             } else {
                 speakOutput = requestAttributes.t( 'COOKING_MESSAGE_NOSUB', { recipe: recipe.value } );
@@ -61,7 +64,7 @@ const CookingHandler = {
                     .getResponse();
             }
 
-            const repromptOutput = requestAttributes.t( 'COOKING_REPROMT' );
+            const repromptOutput = requestAttributes.t( 'COOKING_REPROMPT' );
             return handlerInput.responseBuilder
                 .speak( speakOutput )
                 .reprompt( repromptOutput )
@@ -69,7 +72,7 @@ const CookingHandler = {
                 .getResponse();
         }
 
-        if ( yesNoSubstitute.value === 'nein' ) {
+        if ( yesNoSubstitute.value === 'nein' || yesNoSubstitute.value === 'no' ) {
             blockSubstitution( handlerInput );
             const speakOutput = requestAttributes.t( 'NO_SUBSTITUTE_MESSAGE' );
             return handlerInput.responseBuilder
@@ -78,20 +81,25 @@ const CookingHandler = {
         }
 
         const { selectSubstitute } = currentIntent.slots;
-        if ( yesNoSubstitute.value === 'ja' && !selectSubstitute.value ) {
+        if ( ( yesNoSubstitute.value === 'ja' || yesNoSubstitute.value === 'yes' ) && !selectSubstitute.value ) {
             const substitutes = await getSubstitutes( handlerInput );
-            const speakOutput = `<speak>Sag 1, 2, oder 3 um eines der folgenden <lang xml:lang="en-US">Substitutes</lang> auszuwählen: ${ getSubstiuteNames( substitutes ) }</speak>`;
+            const speakOutput = requestAttributes.t( 'SELECT_SUBSTITUTE_MESSAGE', { substitutes: getSubstituteNames( substitutes, locale ) } );
             return handlerInput.responseBuilder
                 .speak( speakOutput )
-                .reprompt( 'Sag, 1, 2 oder 3.' )
+                .reprompt( speakOutput )
                 .addElicitSlotDirective( 'selectSubstitute' )
                 .getResponse();
         }
 
         if ( selectSubstitute.value ) {
             const substituted = await substitute( selectSubstitute.value, handlerInput );
+            const speakOutput = requestAttributes.t( 'SUBSTITUTE_MESSAGE_SUCCESS',
+                {
+                    original: substituted.original[ locale ],
+                    substitute: substituted.ingredient[ locale ],
+                } );
             return handlerInput.responseBuilder
-                .speak( `Super, ich habe ${ substituted.original.de } durch ${ substituted.ingredient.de } ersetzt` )
+                .speak( speakOutput )
                 .getResponse();
         }
 

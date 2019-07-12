@@ -10,10 +10,8 @@ const PotatoeHandler = {
     handle( handlerInput ) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
         const speakOutput = `${ requestAttributes.t( 'POTATOE_MESSAGE' ) }`;
-        const repromtOutput = requestAttributes.t( 'POTATOE_REPROMPT' );
         return handlerInput.responseBuilder
             .speak( speakOutput )
-            .reprompt( repromtOutput )
             .getResponse();
     },
 };
