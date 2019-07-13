@@ -9,6 +9,7 @@ const COOKING_INTENT = 'CookingIntent';
 const SESSION_ENDED_REQUEST = 'SessionEndedRequest';
 const PITCH_INTENT = 'PitchIntent';
 const NUTRI_SCORE_INTENT = 'NutriScoreIntent';
+const POTATOE_INTENT = 'PotatoeIntent';
 
 module.exports = {
     LAUNCH_REQUEST,
@@ -22,4 +23,5 @@ module.exports = {
     SESSION_ENDED_REQUEST,
     PITCH_INTENT,
     NUTRI_SCORE_INTENT,
+    POTATOE_INTENT,
 };
