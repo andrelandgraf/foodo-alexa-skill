@@ -2,7 +2,7 @@ const intents = require( './index' );
 const { RECIPES } = require( './recipe' );
 
 const {
-    startCooking, blockSubstitution, substitute, getSubstitutes,
+    startCooking, blockSubstitution, substitute, getSubstitutes, getImprovements,
 } = require( '../services/foodo-api/cooking/cooking' );
 
 const findRecipe = recipeName => RECIPES.find( r => ( r.includes( '-' )
@@ -33,7 +33,14 @@ const CookingHandler = {
         }
 
         if ( recipe.value === 'nein' || recipe.value === 'no' ) {
-            const speakOutput = requestAttributes.t( 'NO_NEXT_RECIPE' );
+            const payload = await getImprovements( handlerInput );
+
+            const reduce = Math
+                .round( payload.oldValues.KiloJoule - payload.newValues.KiloJoule );
+
+            const speakOutput = requestAttributes.t( 'NO_NEXT_RECIPE',
+                { oldScore: payload.oldScore, newScore: payload.newScore, reduce } );
+
             return handlerInput.responseBuilder
                 .speak( speakOutput )
                 .getResponse();
@@ -49,7 +56,17 @@ const CookingHandler = {
 
         const { yesNoSubstitute } = currentIntent.slots;
         if ( !yesNoSubstitute.value ) {
-            const payload = await startCooking( findRecipe( recipe.value ), handlerInput );
+            const recipeName = findRecipe( recipe.value );
+
+            if ( !recipeName ) {
+                const speakOutput = requestAttributes.t( 'WRONG_RECIPE' );
+                return handlerInput.responseBuilder
+                    .speak( speakOutput )
+                    .addElicitSlotDirective( 'recipe' )
+                    .getResponse();
+            }
+
+            const payload = await startCooking( recipeName, handlerInput );
 
             let speakOutput;
 

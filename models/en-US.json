@@ -90,7 +90,8 @@
             "to let us cook {recipe}",
             "to start {recipe}",
             "to let us cook {recipe} together",
-            "to let us start {recipe}"
+            "to let us start {recipe}",
+            "to cook"
           ],
           "slots": [
               {
@@ -99,8 +100,9 @@
                   "samples": [
                       "{recipe}",
                       "cook {recipe}",
+                      "to cook {recipe}",
                       "let us cook {recipe}",
-                      "start {recipe}",
+                      "to start {recipe}",
                       "let us cook {recipe} together",
                       "let us start {recipe}"
                   ]
@@ -121,7 +123,7 @@
         {
           "name": "PitchIntent",
           "samples": [
-            "pitch",
+            "to pitch",
             "pitch me Foodo",
             "explain Foodo to me",
             "what is Foodo",

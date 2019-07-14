@@ -22,10 +22,10 @@ const RecipeHandler = {
     handle( handlerInput ) {
         const requestAttributes = handlerInput.attributesManager.getRequestAttributes();
         const speakOutput = requestAttributes.t( 'RECIPE_MESSAGE', { recipes: RECIPES.join( ', ' ) } );
-        const repromtOutput = requestAttributes.t( 'RECIPE_REPROMPT' );
+        const repromptOutput = requestAttributes.t( 'RECIPE_REPROMPT' );
         return handlerInput.responseBuilder
             .speak( speakOutput )
-            .reprompt( repromtOutput )
+            .reprompt( repromptOutput )
             .getResponse();
     },
 };

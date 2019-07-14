@@ -27,6 +27,7 @@ const ENDPOINTS = {
         SUBSTITUTES: '/substitutes',
         SUBSTITUTE: '/substitute/',
         BLOCK: '/block',
+        NUTRISCORE: '/nutriscore',
     },
     INGREDIENTS: 'ingredients',
     CATEGORIES: 'categories',

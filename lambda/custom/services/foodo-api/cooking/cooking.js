@@ -22,9 +22,15 @@ const blockSubstitution = handlerInput => postRequest(
     handlerInput,
 );
 
+const getImprovements = handlerInput => getRequest(
+    `${ ENDPOINTS.COOKING }${ ENDPOINTS.COOKING_ENDPOINTS.NUTRISCORE }`,
+    handlerInput,
+);
+
 module.exports = {
     startCooking,
     getSubstitutes,
     substitute,
     blockSubstitution,
+    getImprovements,
 };
