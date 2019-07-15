@@ -38,8 +38,38 @@ const CookingHandler = {
             const reduce = Math
                 .round( payload.oldValues.KiloJoule - payload.newValues.KiloJoule );
 
-            const speakOutput = requestAttributes.t( 'NO_NEXT_RECIPE',
-                { oldScore: payload.oldScore, newScore: payload.newScore, reduce } );
+            const isImprovement = payload.oldScore !== payload.newScore;
+
+            const startSentence = requestAttributes.t( 'NO_NEXT_RECIPE_START' );
+
+            const improvementSentence = isImprovement ? requestAttributes.t( 'NO_NEXT_RECIPE_IMPROVEMENT', {
+                oldScore: payload.oldScore,
+                newScore: payload.newScore,
+            } ) : '';
+
+            const add = {
+                en: {
+                    long: 'Additionally, you',
+                    short: 'You',
+                },
+                de: {
+                    long: 'Außerdem sparst du',
+                    short: 'Du sparst ',
+                },
+            };
+
+            const reductionSentence = reduce > 0 ? requestAttributes.t( 'NO_NEXT_RECIPE_REDUCTION', {
+                reduce,
+                intro: isImprovement ? add[ locale ].long : add[ locale ].short,
+            } ) : '';
+
+            const endSentence = requestAttributes.t( 'NO_NEXT_RECIPE_END' );
+
+
+            const speakOutput = startSentence
+                + improvementSentence
+                + reductionSentence
+                + endSentence;
 
             return handlerInput.responseBuilder
                 .speak( speakOutput )
