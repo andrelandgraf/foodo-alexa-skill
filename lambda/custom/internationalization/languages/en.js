@@ -11,7 +11,7 @@ const enData = {
         LAUNCH_REPROMPT: 'If you dont know what you would like to eat, just ask me which recipes I know.',
         RECIPE_MESSAGE: 'I know the following recipes: {{ recipes }}',
         NEXT_RECIPE_MESSAGE: 'Awesome! Which one of the following recipes would you like to cook then? {{ recipes }}',
-        RECIPE_REPROMPT: 'You have to tell me: cook recipe', // 'If you want to know all recipes, check out our Foodo website.',
+        RECIPE_REPROMPT: 'You have to say: <say-as interpret-as="interjection">cook</say-as> followed by the name of the recipe.', // 'If you want to know all recipes, check out our Foodo website.',
         NO_NEXT_RECIPE_START: '<speak>Ok great! ',
         NO_NEXT_RECIPE_IMPROVEMENT: 'You improved this recipe from a Nutri Score of <emphasis>{{oldScore}}</emphasis> to a Nutri Score of <emphasis>{{newScore}}</emphasis>. ',
         NO_NEXT_RECIPE_REDUCTION: '{{ intro }} are saving about <emphasis>{{reduce}}</emphasis> Kilo Joules.',

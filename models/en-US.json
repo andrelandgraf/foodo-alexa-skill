@@ -91,7 +91,9 @@
             "to start {recipe}",
             "to let us cook {recipe} together",
             "to let us start {recipe}",
-            "to cook"
+            "to cook",
+              "start cooking",
+              "start cooking {recipe}"
           ],
           "slots": [
               {
