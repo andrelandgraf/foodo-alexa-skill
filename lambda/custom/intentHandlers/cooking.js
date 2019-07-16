@@ -35,8 +35,11 @@ const CookingHandler = {
         if ( recipe.value === 'nein' || recipe.value === 'no' ) {
             const payload = await getImprovements( handlerInput );
 
+            const totalKJold = payload.oldValues.KiloJoule * ( payload.oldWeight / 100 );
+            const totalKJnew = payload.newValues.KiloJoule * ( payload.newWeight / 100 );
+
             const reduce = Math
-                .round( payload.oldValues.KiloJoule - payload.newValues.KiloJoule );
+                .round( totalKJold - totalKJnew );
 
             const isImprovement = payload.oldScore !== payload.newScore;
 
