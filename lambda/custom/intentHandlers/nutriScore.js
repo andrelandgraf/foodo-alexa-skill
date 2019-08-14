@@ -1,5 +1,6 @@
 const intents = require( './index' );
 
+// Handler used to explain the nutriscore to the user
 const NutriScoreHandler = {
     canHandle( handlerInput ) {
         const { request } = handlerInput.requestEnvelope;

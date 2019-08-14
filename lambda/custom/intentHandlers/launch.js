@@ -1,6 +1,7 @@
 const intents = require( './index' );
 const userService = require( '../services/foodo-api/user/userService' );
 
+// Handler called for launching the application
 const LaunchHandler = {
     canHandle( handlerInput ) {
         const { request } = handlerInput.requestEnvelope;

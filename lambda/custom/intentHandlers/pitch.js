@@ -1,5 +1,6 @@
 const intents = require( './index' );
 
+// Handler used to pitch Foodo to the user
 const PitchHandler = {
     canHandle( handlerInput ) {
         const { request } = handlerInput.requestEnvelope;

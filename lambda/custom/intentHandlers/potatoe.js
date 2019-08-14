@@ -1,5 +1,6 @@
 const intents = require( './index' );
 
+// Handler used as an Easter-Egg
 const PotatoeHandler = {
     canHandle( handlerInput ) {
         const { request } = handlerInput.requestEnvelope;

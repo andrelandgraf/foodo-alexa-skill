@@ -1,3 +1,7 @@
+/**
+ * Starting point of the lambda application
+ */
+
 /* eslint-disable import/no-extraneous-dependencies */
 const Alexa = require( 'ask-sdk-core' );
 
@@ -15,6 +19,7 @@ const internationalization = require( './internationalization/internationalizati
 const skillBuilder = Alexa.SkillBuilders.custom();
 
 exports.handler = skillBuilder
+    // add Intent Handlers to our Alexa Skill
     .addRequestHandlers(
         launchHandlers.LaunchHandler,
         builtInHandlers.HelpHandler,
@@ -27,6 +32,7 @@ exports.handler = skillBuilder
         potatoeHandlers.PotatoeHandler,
         nutriScoreHandler.NutriScoreHandler,
     )
+    // add Localization Interceptor as a middleware for localisation
     .addRequestInterceptors( internationalization.LocalizationInterceptor )
     .addErrorHandlers( errorHandlers.ErrorHandler )
     .lambda();

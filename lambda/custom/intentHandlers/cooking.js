@@ -5,12 +5,25 @@ const {
     startCooking, blockSubstitution, substitute, getSubstitutes, getImprovements,
 } = require( '../services/foodo-api/cooking/cooking' );
 
+// Helper functions
+
+/**
+ * Helper functions to match and find recipe by name
+ * @param {string} recipeName
+ */
 const findRecipe = recipeName => RECIPES.find( r => ( r.includes( '-' )
         && r.replace( /[-]/g, ' ' ).toLowerCase() === recipeName.toLowerCase() )
     || r.toLowerCase() === recipeName.toLowerCase() );
 
+/**
+ * Helper function to get substiute names from the substitutes array
+ * @param {Array} substitutes
+ * @param {string} locale
+ */
 const getSubstituteNames = ( substitutes, locale ) => substitutes
     .map( s => s.substitute.name[ locale ] ).join( ', ' );
+
+// Intent handler
 
 const CookingHandler = {
     canHandle( handlerInput ) {
@@ -24,6 +37,7 @@ const CookingHandler = {
         const currentIntent = handlerInput.requestEnvelope.request.intent;
         const { recipe } = currentIntent.slots;
 
+        // if user has not yet decided what to cook prompt this
         if ( !recipe.value ) {
             const speakOutput = requestAttributes.t( 'NO_RECIPE_CHOSEN' );
             return handlerInput.responseBuilder
@@ -32,14 +46,14 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // if user has fully improved the recipe and doesn't cook anything else
         if ( recipe.value === 'nein' || recipe.value === 'no' ) {
             const payload = await getImprovements( handlerInput );
 
             const totalKJold = payload.oldValues.KiloJoule * ( payload.oldWeight / 100 );
             const totalKJnew = payload.newValues.KiloJoule * ( payload.newWeight / 100 );
 
-            const reduce = Math
-                .round( totalKJold - totalKJnew );
+            const reduce = Math.round( totalKJold - totalKJnew );
 
             const isImprovement = payload.oldScore !== payload.newScore;
 
@@ -79,6 +93,7 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // if user has fully improved the recipe and decides to cook something else
         if ( recipe.value === 'ja' || recipe.value === 'yes' ) {
             const speakOutput = requestAttributes.t( 'NEXT_RECIPE_MESSAGE', { recipes: RECIPES.join( ', ' ) } );
             return handlerInput.responseBuilder
@@ -87,6 +102,7 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // this will prompt an offer to substitue the worst ingredient of the current recipe
         const { yesNoSubstitute } = currentIntent.slots;
         if ( !yesNoSubstitute.value ) {
             const recipeName = findRecipe( recipe.value );
@@ -122,6 +138,7 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // if the user does not want to substitute, this will be promted
         if ( yesNoSubstitute.value === 'nein' || yesNoSubstitute.value === 'no' ) {
             blockSubstitution( handlerInput );
             const speakOutput = requestAttributes.t( 'NO_SUBSTITUTE_MESSAGE' );
@@ -130,6 +147,7 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // if the user does want to substitute, this will be promted
         const { selectSubstitute } = currentIntent.slots;
         if ( ( yesNoSubstitute.value === 'ja' || yesNoSubstitute.value === 'yes' ) && !selectSubstitute.value ) {
             const substitutes = await getSubstitutes( handlerInput );
@@ -141,6 +159,8 @@ const CookingHandler = {
                 .getResponse();
         }
 
+        // the selected substitute number will be used to improve the recipe
+        // and prompt some final output
         if ( selectSubstitute.value ) {
             const substituted = await substitute( selectSubstitute.value, handlerInput );
             const speakOutput = requestAttributes.t( 'SUBSTITUTE_MESSAGE_SUCCESS',

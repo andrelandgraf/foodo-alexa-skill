@@ -1,5 +1,6 @@
 const intents = require( './index' );
 
+// List of recipes that we want to offer to the user as suggestions
 const RECIPES = [
     'Eggs Benedict',
     'Chicken Tikka Masala',
@@ -12,6 +13,7 @@ const RECIPES = [
     'Chocolate Souffle',
 ];
 
+// Handler used to offer recipes to the user
 const RecipeHandler = {
     canHandle( handlerInput ) {
         const { request } = handlerInput.requestEnvelope;
